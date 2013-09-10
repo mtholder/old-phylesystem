@@ -15,7 +15,8 @@ run into large-file issues with Git. Currently (September 2013)
 
 * the largest study is 24MB of uncompressed JSON.
 * about a dozen studies are larger than 1MB
-* there are about 2600 studies
+* there are about 2600 studies in our datastore
+* there are currently about 8000 studies in the wild (some may need heavy datascrubbing to be importable)
 * We can expect dozens to hundreds of studies to be uploaded per year
 * The *metadata* about studies, so-called annotation data, will likely grow very quickly as tools learn to autogenerate this data
 
