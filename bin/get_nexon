@@ -8,15 +8,22 @@
 # 'from' date below (from=2010-01-01T00:00:00) should be early enough to get all studies
 # leaving 'to' date blank defaults to current date
 echo -e "Getting list of study IDs...";
-wget --output-document=nexsons.list --quiet http://www.reelab.net/phylografter/study/modified_list.json/url?from=2010-01-01T00:00:00
+
+if [ ! -e "nexsons.list" ]; then
+    wget --output-document=nexsons.list --quiet http://www.reelab.net/phylografter/study/modified_list.json/url?from=2010-01-01T00:00:00
+fi
+
 
 # parse JSON string to get all study IDs (integers)
 studies=(`grep -oE '\[.*\]' nexsons.list | grep -oE '[[:digit:]]+'`);
 
 for s in "${studies[@]}"
    do
-   echo -e "Getting study #$s ...";
-   cmd="wget -O $s.gz -q http://www.reelab.net/phylografter/study/export_gzipNexSON.json/$s";
-   echo $cmd;
-   $cmd;
+   if [ ! -e "studies/0/$s.json" ]; then
+       echo -e "Getting studies/0/$s.json ...";
+       cmd="wget -O studies/0/$s.json -q http://www.reelab.net/phylografter/study/export_NexSON.json/$s";
+       echo $cmd;
+       $cmd;
+       sleep 1;
+   fi
 done;
