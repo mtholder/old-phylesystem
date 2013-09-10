@@ -24,6 +24,7 @@ for s in "${studies[@]}"
        cmd="wget -O studies/0/$s.json -q http://www.reelab.net/phylografter/study/export_NexSON.json/$s";
        echo $cmd;
        $cmd;
+       du -sh studies/0/$s.json
        sleep 1;
    fi
 done;
