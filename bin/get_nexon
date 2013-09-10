@@ -1,0 +1,22 @@
+#!/bin/bash
+# Imported from https://bitbucket.org/blackrim/avatol_nexsons/raw/11fca0c5afc2ebe2ecc80eec3c6df86c172057e7/getNexsons.sh
+
+# opentree via jwb
+# this script contacts phylografter for the list of all available studies
+# it then downloads study tree(s) in gzipped 'nexson' format
+# possible extension: check if study has already been downloaded i.e. only get new studies
+# 'from' date below (from=2010-01-01T00:00:00) should be early enough to get all studies
+# leaving 'to' date blank defaults to current date
+echo -e "Getting list of study IDs...";
+wget --output-document=nexsons.list --quiet http://www.reelab.net/phylografter/study/modified_list.json/url?from=2010-01-01T00:00:00
+
+# parse JSON string to get all study IDs (integers)
+studies=(`grep -oE '\[.*\]' nexsons.list | grep -oE '[[:digit:]]+'`);
+
+for s in "${studies[@]}"
+   do
+   echo -e "Getting study #$s ...";
+   cmd="wget -O $s.gz -q http://www.reelab.net/phylografter/study/export_gzipNexSON.json/$s";
+   echo $cmd;
+   $cmd;
+done;
