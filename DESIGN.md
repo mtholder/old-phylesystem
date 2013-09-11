@@ -20,6 +20,11 @@ run into large-file issues with Git. Currently (September 2013)
 * We can expect dozens to hundreds of studies to be uploaded per year
 * The *metadata* about studies, so-called annotation data, will likely grow very quickly as tools learn to autogenerate this data
 
+This repo will be used by the Open Tree of Life API, which will be the main
+entry point for people to access the OToL in a programmatic way. It is expected
+that some people may want to interact directly with this repo for large data
+changes, but most will be curating data via a website which uses the OToL API.
+
 ## NexSON
 
 NexSON is a one-to-one conversion of [NeXML](http://nexml.org) according to
