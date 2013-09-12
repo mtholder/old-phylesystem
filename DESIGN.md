@@ -20,22 +20,31 @@ run into large-file issues with Git. Currently (September 2013)
 * We can expect dozens to hundreds of studies to be uploaded per year
 * The *metadata* about studies, so-called annotation data, will likely grow very quickly as tools learn to autogenerate this data
 
+## OToL API
+
 This repo will be used by the Open Tree of Life API, which will be the main
 entry point for people to access the OToL in a programmatic way. It is expected
 that some people may want to interact directly with this repo for large data
 changes, but most will be curating data via a website which uses the OToL API.
 
+The API will abstract away all the Git-specific details of this repo, so users
+of the API can be blissfully ignorant of all the implementation details of
+TreeNexus.  Additionally, users of the OToL API will be able to download select
+parts of the OToL without downloading the entire corpus or even an entire
+study.
+
 ## NexSON
 
 NexSON is a one-to-one conversion of [NeXML](http://nexml.org) according to
-Badgerfish conventions.  Most OToL applications prefer JSON over XML, so it
-makes more sense to store our data in that format. It takes up less space, too.
+[Badgerfish](http://badgerfish.ning.com/) conventions.  Most OToL applications
+prefer JSON over XML, so it makes more sense to store our data in that format.
+It takes up less space, too.
 
 Each NexSON file must:
 
 * be valid NexSON (and hence valid JSON)
 * be less than 50MB (files >=50MB generate warnings on Github and files larger than 100MB are not allowed)
-* be "prettified" with human-readable linebreaks (so we can get meaningful diffs)
+* be "prettified" with human-readable linebreaks and indentation (so we can get meaningful diffs)
 
 ## Authors
 
