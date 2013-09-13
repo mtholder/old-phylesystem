@@ -55,13 +55,22 @@ parameter.
 
 Examples of how to interact with the basic API via ```curl``` are provide below.
 
+### OToL API Version 1 Methods
+
 To get the entire NexSON of study N :
 
     curl http://api.opentreeoflife.org/1/study/N.json
 
-To update/overwrite the entire NexSON for study N with a local file called ```N.json``` and an API key called "deadbeef":
+To update/overwrite the entire NexSON for study N with a local file called
+```N.json``` and an API key called "deadbeef":
 
-    curl -X POST http://api.opentreeoflife.org/1/study/N.json&key=deadbeef -H "Content-Type: Application/json" -d@N.json
+    curl -X POST http://api.opentreeoflife.org/1/study/N.json&key=deadbeef \
+    -H "Content-Type: Application/json" -d@N.json
+
+All API calls are specific to the API version, which is a part of the URL. This
+allows for new versions of the API to come out which are not
+backward-compatible, while allowing old clients to continue working with older
+API versions.
 
 ## Authors
 
