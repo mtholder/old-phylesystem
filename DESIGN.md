@@ -33,13 +33,6 @@ TreeNexus.  Additionally, users of the OToL API will be able to download select
 parts of the OToL without downloading the entire corpus or even an entire
 study.
 
-### Basic API methods
-
-The most basic ways to interact with the API are to request a phylogenetic
-study via a HTTP GET and to update an entire study (not a part of it) via HTTP
-POST. All HTTP POST requests require a valid API key with the ```key```
-parameter.
-
 ## NexSON
 
 NexSON is a one-to-one conversion of [NeXML](http://nexml.org) according to
@@ -52,6 +45,23 @@ Each NexSON file must:
 * be valid NexSON (and hence valid JSON)
 * be less than 50MB (files >=50MB generate warnings on Github and files larger than 100MB are not allowed)
 * be "prettified" with human-readable linebreaks and indentation (so we can get meaningful diffs)
+
+### Basic API methods
+
+The most basic ways to interact with the API are to request a phylogenetic
+study via a HTTP GET and to update an entire study (not a part of it) via HTTP
+POST. All HTTP POST requests require a valid API key with the ```key```
+parameter.
+
+Examples of how to interact with the basic API via ```curl``` are provide below.
+
+To get the entire NexSON of study N :
+
+    curl http://api.opentreeoflife.org/1/study/N.json
+
+To update/overwrite the entire NexSON for study N with a local file called ```N.json``` and an API key called "deadbeef":
+
+    curl -X POST http://api.opentreeoflife.org/1/study/N.json&key=deadbeef -H "Content-Type: Application/json" -d@N.json
 
 ## Authors
 
