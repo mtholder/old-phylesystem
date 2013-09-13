@@ -33,6 +33,13 @@ TreeNexus.  Additionally, users of the OToL API will be able to download select
 parts of the OToL without downloading the entire corpus or even an entire
 study.
 
+### Basic API methods
+
+The most basic ways to interact with the API are to request a phylogenetic
+study via a HTTP GET and to update an entire study (not a part of it) via HTTP
+POST. All HTTP POST requests require a valid API key with the ```key```
+parameter.
+
 ## NexSON
 
 NexSON is a one-to-one conversion of [NeXML](http://nexml.org) according to
