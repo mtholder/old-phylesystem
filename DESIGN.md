@@ -78,7 +78,7 @@ These files will have the structure of:
 To update/overwrite the entire NexSON for study N with a local file called
 ```N.json``` and an API key called "deadbeef":
 
-    curl -X POST http://api.opentreeoflife.org/1/study/N.json&key=deadbeef \
+    curl -X POST http://api.opentreeoflife.org/1/study/N.json?key=deadbeef \
         -H "Content-Type: Application/json" -d@N.json
 
 All API calls are specific to the API version, which is a part of the URL. This
