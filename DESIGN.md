@@ -81,6 +81,9 @@ To update/overwrite the entire NexSON for study N with a local file called
     curl -X POST http://api.opentreeoflife.org/1/study/N.json?key=deadbeef \
         -H "Content-Type: Application/json" -d@N.json
 
+TODO: These details probably belong in the API repo. Also, we need a mandatory
+email address to associate to each POST which changes data.
+
 All API calls are specific to the API version, which is a part of the URL. This
 allows for new versions of the API to come out which are not
 backward-compatible, while allowing old clients to continue working with older
