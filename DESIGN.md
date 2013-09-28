@@ -22,6 +22,7 @@ run into large-file issues with Git. Currently (September 2013)
 
 ## OToL API
 
+
 This repo will be used by the Open Tree of Life API, which will be the main
 entry point for people to access the OToL in a programmatic way. It is expected
 that some people may want to interact directly with this repo for large data
@@ -46,51 +47,10 @@ Each NexSON file must:
 * be less than 50MB (files >=50MB generate warnings on Github and files larger than 100MB are not allowed)
 * be "prettified" with human-readable linebreaks and indentation (so we can get meaningful diffs)
 
+
 ### Basic API methods
 
-The most basic ways to interact with the API are to request a phylogenetic
-study via a HTTP GET and to update an entire study (not a part of it) via HTTP
-POST. All HTTP POST requests require a valid API key with the ```key```
-parameter.
-
-Examples of how to interact with the basic API via ```curl``` are provide below.
-
-### OToL API Version 1 Methods
-
-To get the entire NexSON of study N :
-
-    curl http://api.opentreeoflife.org/1/study/N.json
-
-On the backend, the API will ask treenexus for the directory containing study
-```N```.  If the JSON representing that study is greater than 50MB, it will be
-broken into multiple files to be stored in Git, so they  will be merged
-together before a response is sent. This is all transparent to the user of the
-OToL API. Only people using the treenexus data files directly will need to
-handle this.
-
-These files will have the structure of:
-
-    studies/N/N-0.json
-    studies/N/N-1.json
-    ....
-    studies/N/N-10.json
-
-To update/overwrite the entire NexSON for study N with a local file called
-```N.json``` and an API key called "deadbeef":
-
-    curl -X POST http://api.opentreeoflife.org/1/study/N.json?key=deadbeef \
-        -H "Content-Type: Application/json" -d@N.json
-
-TODO: These details probably belong in the API repo. Also, we need a mandatory
-email address to associate to each POST which changes data.
-
-All API calls are specific to the API version, which is a part of the URL. This
-allows for new versions of the API to come out which are not
-backward-compatible, while allowing old clients to continue working with older
-API versions.
-
-Any POST request attempting to update a study with invalid JSON will be denied
-and an HTTP error code 400 will be returned.
+Please see the [OTOL API Design Doc](https://github.com/OpenTreeOfLife/api.opentreeoflife.org/blob/master/DESIGN.md)
 
 ## Authors
 
