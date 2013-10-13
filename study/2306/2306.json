@@ -42,6 +42,148 @@
 "$": 1530234, 
 "@property": "ot:focalClade", 
 "@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Open Tree NexSON validation", 
+"@property": "ot:annotation", 
+"@xsi:type": "nex:ResourceMeta", 
+"author": {
+"description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES"
+], 
+"commandLine": [
+"--validate", 
+"--embed"
+], 
+"pythonImplementation": "CPython", 
+"pythonVersion": "2.7.5"
+}, 
+"name": "normalize_ot_nexson.py", 
+"url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
+"version": "0.0.1a"
+}, 
+"dateCreated": "2013-10-13T03:48:47.188076", 
+"id": "meta-5d3427ec-33ba-11e3-b7ac-5891cf52fe1d", 
+"isValid": false, 
+"messages": [
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:studyPublication\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "@property=ot:studyPublication", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:inGroupClade\" in \"meta\" in \"tree(id=tree4870)\"\n", 
+"data": "@property=ot:inGroupClade", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"top": "trees", 
+"treeID": "tree4870", 
+"treesID": "trees2306"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node848116\", \"node848118\", \"node848119\", \"node848124\", \"node848125\", \"node848127\", \"node848128\", \"node848131\", \"node848132\", \"node848135\", \"node848137\", \"node848138\", \"node848140\", \"node848142\", \"node848143\", \"node848144\", \"node848147\", \"node848149\", \"node848152\", \"node848153\", \"node848155\", \"node848156\", \"node848160\", \"node848161\", \"node848162\", \"node848164\", \"node848166\", \"node848168\", \"node848169\", \"node848173\", \"node848174\", \"node848176\", \"node848178\", \"node848180\", \"node848181\", \"node848184\", \"node848185\", \"node848189\", \"node848190\", \"node848193\", \"node848194\", \"node848196\", \"node848198\", \"node848199\", \"node848201\", \"node848203\", \"node848206\", \"node848207\", \"node848210\", \"node848211\", \"node848213\", \"node848214\") are mapped to the OTT ID \"306159\" in \"tree(id=tree4870)\"\n", 
+"data": {
+"nodes": [
+"node848116", 
+"node848118", 
+"node848119", 
+"node848124", 
+"node848125", 
+"node848127", 
+"node848128", 
+"node848131", 
+"node848132", 
+"node848135", 
+"node848137", 
+"node848138", 
+"node848140", 
+"node848142", 
+"node848143", 
+"node848144", 
+"node848147", 
+"node848149", 
+"node848152", 
+"node848153", 
+"node848155", 
+"node848156", 
+"node848160", 
+"node848161", 
+"node848162", 
+"node848164", 
+"node848166", 
+"node848168", 
+"node848169", 
+"node848173", 
+"node848174", 
+"node848176", 
+"node848178", 
+"node848180", 
+"node848181", 
+"node848184", 
+"node848185", 
+"node848189", 
+"node848190", 
+"node848193", 
+"node848194", 
+"node848196", 
+"node848198", 
+"node848199", 
+"node848201", 
+"node848203", 
+"node848206", 
+"node848207", 
+"node848210", 
+"node848211", 
+"node848213", 
+"node848214"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4870", 
+"treesID": "trees2306"
+}, 
+"severity": "WARNING"
+}
+]
 }
 ], 
 "otus": {

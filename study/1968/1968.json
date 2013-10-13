@@ -42,6 +42,168 @@
 "$": 3523279, 
 "@property": "ot:focalClade", 
 "@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Open Tree NexSON validation", 
+"@property": "ot:annotation", 
+"@xsi:type": "nex:ResourceMeta", 
+"author": {
+"description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES"
+], 
+"commandLine": [
+"--validate", 
+"--embed"
+], 
+"pythonImplementation": "CPython", 
+"pythonVersion": "2.7.5"
+}, 
+"name": "normalize_ot_nexson.py", 
+"url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
+"version": "0.0.1a"
+}, 
+"dateCreated": "2013-10-13T03:47:46.788873", 
+"id": "meta-3933f6e2-33ba-11e3-bef4-5891cf52fe1d", 
+"isValid": false, 
+"messages": [
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:studyPublication\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "@property=ot:studyPublication", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node750244\", \"node750246\", \"node750247\", \"node750249\", \"node750251\", \"node750252\") are mapped to the OTT ID \"3552241\" in \"tree(id=tree4021)\"\n", 
+"data": {
+"nodes": [
+"node750244", 
+"node750246", 
+"node750247", 
+"node750249", 
+"node750251", 
+"node750252"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4021", 
+"treesID": "trees1968"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node750184\", \"node750186\", \"node750187\", \"node750189\", \"node750190\") are mapped to the OTT ID \"3552183\" in \"tree(id=tree4021)\"\n", 
+"data": {
+"nodes": [
+"node750184", 
+"node750186", 
+"node750187", 
+"node750189", 
+"node750190"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4021", 
+"treesID": "trees1968"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"3552241\". The clades are \"node750244\" +++ \"node750246\", \"node750247\", \"node750249\", \"node750251\", \"node750252\", \"node750250\", \"node750248\", \"node750245\" in \"tree(id=tree4021)\"\n", 
+"data": {
+"nodes": [
+[
+"node750244"
+], 
+[
+"node750246", 
+"node750247", 
+"node750249", 
+"node750251", 
+"node750252", 
+"node750250", 
+"node750248", 
+"node750245"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4021", 
+"treesID": "trees1968"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"3552183\". The clades are \"node750184\" +++ \"node750186\", \"node750187\", \"node750185\" +++ \"node750189\", \"node750190\", \"node750188\" in \"tree(id=tree4021)\"\n", 
+"data": {
+"nodes": [
+[
+"node750184"
+], 
+[
+"node750186", 
+"node750187", 
+"node750185"
+], 
+[
+"node750189", 
+"node750190", 
+"node750188"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4021", 
+"treesID": "trees1968"
+}, 
+"severity": "WARNING"
+}
+]
 }
 ], 
 "otus": {

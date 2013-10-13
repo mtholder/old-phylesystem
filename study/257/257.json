@@ -47,6 +47,1485 @@
 "$": 1884564, 
 "@property": "ot:focalClade", 
 "@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Open Tree NexSON validation", 
+"@property": "ot:annotation", 
+"@xsi:type": "nex:ResourceMeta", 
+"author": {
+"description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES"
+], 
+"commandLine": [
+"--validate", 
+"--embed"
+], 
+"pythonImplementation": "CPython", 
+"pythonVersion": "2.7.5"
+}, 
+"name": "normalize_ot_nexson.py", 
+"url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
+"version": "0.0.1a"
+}, 
+"dateCreated": "2013-10-13T03:49:29.355712", 
+"id": "meta-76566762-33ba-11e3-ad58-5891cf52fe1d", 
+"isValid": false, 
+"messages": [
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottolid\" in \"meta\" in \"otu(id=otu65746)\"\n", 
+"data": "@property=ot:ottolid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu65746", 
+"otusID": "otus257", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:inGroupClade\" in \"meta\" in \"tree(id=tree140)\"\n", 
+"data": "@property=ot:inGroupClade", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu65746\") which does not have an OTT ID in \"node(id=node167498)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node167498", 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167464\", \"node167465\", \"node167468\") are mapped to the OTT ID \"972675\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167464", 
+"node167465", 
+"node167468"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167364\", \"node167366\", \"node167368\", \"node167371\") are mapped to the OTT ID \"841988\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167364", 
+"node167366", 
+"node167368", 
+"node167371"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167485\", \"node167486\") are mapped to the OTT ID \"972679\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167485", 
+"node167486"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167313\", \"node167314\") are mapped to the OTT ID \"854923\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167313", 
+"node167314"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167436\", \"node167437\", \"node167438\") are mapped to the OTT ID \"841997\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167436", 
+"node167437", 
+"node167438"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167421\", \"node167422\", \"node167423\", \"node167424\") are mapped to the OTT ID \"756499\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167421", 
+"node167422", 
+"node167423", 
+"node167424"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167447\", \"node167448\") are mapped to the OTT ID \"542356\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167447", 
+"node167448"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167509\", \"node167510\") are mapped to the OTT ID \"192303\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167509", 
+"node167510"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167344\", \"node167347\") are mapped to the OTT ID \"21285\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167344", 
+"node167347"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167500\", \"node167501\") are mapped to the OTT ID \"21293\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167500", 
+"node167501"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167389\", \"node167390\", \"node167391\") are mapped to the OTT ID \"1074607\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167389", 
+"node167390", 
+"node167391"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167493\", \"node167494\") are mapped to the OTT ID \"21297\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167493", 
+"node167494"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167380\", \"node167381\") are mapped to the OTT ID \"72769\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167380", 
+"node167381"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167429\", \"node167430\") are mapped to the OTT ID \"594170\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167429", 
+"node167430"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167392\", \"node167393\", \"node167394\") are mapped to the OTT ID \"964063\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167392", 
+"node167393", 
+"node167394"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167403\", \"node167404\") are mapped to the OTT ID \"446562\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167403", 
+"node167404"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167337\", \"node167338\", \"node167341\") are mapped to the OTT ID \"594147\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167337", 
+"node167338", 
+"node167341"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167375\", \"node167413\") are mapped to the OTT ID \"446564\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167375", 
+"node167413"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167356\", \"node167357\") are mapped to the OTT ID \"594156\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167356", 
+"node167357"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167440\", \"node167441\") are mapped to the OTT ID \"970477\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167440", 
+"node167441"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167396\", \"node167397\", \"node167398\") are mapped to the OTT ID \"594163\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167396", 
+"node167397", 
+"node167398"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167417\", \"node167418\") are mapped to the OTT ID \"456823\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167417", 
+"node167418"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167348\", \"node167349\") are mapped to the OTT ID \"972666\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167348", 
+"node167349"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node167506\", \"node167507\") are mapped to the OTT ID \"282621\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+"node167506", 
+"node167507"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"972675\". The clades are \"node167464\", \"node167465\", \"node167463\" +++ \"node167468\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167464", 
+"node167465", 
+"node167463"
+], 
+[
+"node167468"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"841988\". The clades are \"node167364\" +++ \"node167366\" +++ \"node167368\" +++ \"node167371\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167364"
+], 
+[
+"node167366"
+], 
+[
+"node167368"
+], 
+[
+"node167371"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21285\". The clades are \"node167344\" +++ \"node167347\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167344"
+], 
+[
+"node167347"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21293\". The clades are \"node167500\" +++ \"node167501\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167500"
+], 
+[
+"node167501"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21297\". The clades are \"node167493\" +++ \"node167494\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167493"
+], 
+[
+"node167494"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"964063\". The clades are \"node167392\" +++ \"node167393\" +++ \"node167394\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167392"
+], 
+[
+"node167393"
+], 
+[
+"node167394"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"594147\". The clades are \"node167337\", \"node167338\", \"node167336\" +++ \"node167341\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167337", 
+"node167338", 
+"node167336"
+], 
+[
+"node167341"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"446564\". The clades are \"node167375\" +++ \"node167413\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167375"
+], 
+[
+"node167413"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"456823\". The clades are \"node167417\" +++ \"node167418\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167417"
+], 
+[
+"node167418"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"972666\". The clades are \"node167348\" +++ \"node167349\" in \"tree(id=tree140)\"\n", 
+"data": {
+"nodes": [
+[
+"node167348"
+], 
+[
+"node167349"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree140", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:inGroupClade\" in \"meta\" in \"tree(id=tree4941)\"\n", 
+"data": "@property=ot:inGroupClade", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu65746\") which does not have an OTT ID in \"node(id=node855258)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node855258", 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855224\", \"node855225\", \"node855228\") are mapped to the OTT ID \"972675\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855224", 
+"node855225", 
+"node855228"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855124\", \"node855126\", \"node855128\", \"node855131\") are mapped to the OTT ID \"841988\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855124", 
+"node855126", 
+"node855128", 
+"node855131"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855245\", \"node855246\") are mapped to the OTT ID \"972679\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855245", 
+"node855246"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855084\", \"node855085\") are mapped to the OTT ID \"854923\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855084", 
+"node855085"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855196\", \"node855197\", \"node855198\") are mapped to the OTT ID \"841997\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855196", 
+"node855197", 
+"node855198"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855181\", \"node855182\", \"node855183\", \"node855184\") are mapped to the OTT ID \"756499\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855181", 
+"node855182", 
+"node855183", 
+"node855184"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855207\", \"node855208\") are mapped to the OTT ID \"542356\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855207", 
+"node855208"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855269\", \"node855270\") are mapped to the OTT ID \"192303\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855269", 
+"node855270"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855103\", \"node855106\") are mapped to the OTT ID \"21285\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855103", 
+"node855106"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855260\", \"node855261\") are mapped to the OTT ID \"21293\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855260", 
+"node855261"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855149\", \"node855150\", \"node855151\") are mapped to the OTT ID \"1074607\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855149", 
+"node855150", 
+"node855151"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855253\", \"node855254\") are mapped to the OTT ID \"21297\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855253", 
+"node855254"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855140\", \"node855141\") are mapped to the OTT ID \"72769\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855140", 
+"node855141"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855189\", \"node855190\") are mapped to the OTT ID \"594170\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855189", 
+"node855190"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855152\", \"node855153\", \"node855154\") are mapped to the OTT ID \"964063\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855152", 
+"node855153", 
+"node855154"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855163\", \"node855164\") are mapped to the OTT ID \"446562\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855163", 
+"node855164"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855096\", \"node855097\", \"node855100\") are mapped to the OTT ID \"594147\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855096", 
+"node855097", 
+"node855100"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855135\", \"node855173\") are mapped to the OTT ID \"446564\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855135", 
+"node855173"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855116\", \"node855117\") are mapped to the OTT ID \"594156\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855116", 
+"node855117"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855200\", \"node855201\") are mapped to the OTT ID \"970477\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855200", 
+"node855201"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855156\", \"node855157\", \"node855158\") are mapped to the OTT ID \"594163\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855156", 
+"node855157", 
+"node855158"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855177\", \"node855178\") are mapped to the OTT ID \"456823\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855177", 
+"node855178"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855107\", \"node855108\") are mapped to the OTT ID \"972666\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855107", 
+"node855108"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes (\"node855266\", \"node855267\") are mapped to the OTT ID \"282621\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+"node855266", 
+"node855267"
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"972675\". The clades are \"node855224\", \"node855225\", \"node855223\" +++ \"node855228\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855224", 
+"node855225", 
+"node855223"
+], 
+[
+"node855228"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"841988\". The clades are \"node855124\" +++ \"node855126\" +++ \"node855128\" +++ \"node855131\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855124"
+], 
+[
+"node855126"
+], 
+[
+"node855128"
+], 
+[
+"node855131"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21285\". The clades are \"node855103\" +++ \"node855106\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855103"
+], 
+[
+"node855106"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21293\". The clades are \"node855260\" +++ \"node855261\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855260"
+], 
+[
+"node855261"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"21297\". The clades are \"node855253\" +++ \"node855254\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855253"
+], 
+[
+"node855254"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"964063\". The clades are \"node855152\" +++ \"node855153\" +++ \"node855154\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855152"
+], 
+[
+"node855153"
+], 
+[
+"node855154"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"594147\". The clades are \"node855096\", \"node855097\", \"node855095\" +++ \"node855100\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855096", 
+"node855097", 
+"node855095"
+], 
+[
+"node855100"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"446564\". The clades are \"node855135\" +++ \"node855173\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855135"
+], 
+[
+"node855173"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"456823\". The clades are \"node855177\" +++ \"node855178\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855177"
+], 
+[
+"node855178"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_NONMOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"comment": "Multiple nodes that do not form the tips of a clade are mapped to the OTT ID \"972666\". The clades are \"node855107\" +++ \"node855108\" in \"tree(id=tree4941)\"\n", 
+"data": {
+"nodes": [
+[
+"node855107"
+], 
+[
+"node855108"
+]
+]
+}, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treeID": "tree4941", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MULTIPLE_TREES", 
+"comment": "Multiple trees were found without an indication of which tree is preferred in \"trees(id=trees257)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"top": "trees", 
+"treesID": "trees257"
+}, 
+"severity": "WARNING"
+}
+]
 }
 ], 
 "otus": {
