@@ -253,5 +253,4 @@ If other arguments aree supplied, it should be the study #'s to be downloaded.
             sys.exit('NexSON "%s" could not be refreshed\n' % paths['nexson'])
         if len(to_download) > 0:
             time.sleep(SLEEP_BETWEEN_DOWNLOADS_TIME)
-        break
 
