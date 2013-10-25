@@ -147,6 +147,9 @@ def open_for_group_write(fp, mode):
     '''Open with mode=mode and permissions '-rw-rw-r--' group writable is 
     the default on some systems/accounts, but it is important that it be present on our deployment machine
     '''
+    d = os.path.split(fp)[0]
+    if not os.path.exists(d):
+        os.makedirs(d)
     o = codecs.open(fp, mode, encoding='utf-8')
     o.flush()
     os.chmod(fp, stat.S_IRGRP | stat.S_IROTH | stat.S_IRUSR | stat.S_IWGRP | stat.S_IWUSR)
