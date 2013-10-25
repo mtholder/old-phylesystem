@@ -232,6 +232,8 @@ If other arguments aree supplied, it should be the study #'s to be downloaded.
     if '-v' in sys.argv:
         VERBOSE = True
         sys.argv.remove('-v')
+    else:
+        VERBOSE = False
     lock_policy = LockPolicy()
     dd = get_default_dir_dict()
     if len(sys.argv) == 1:
