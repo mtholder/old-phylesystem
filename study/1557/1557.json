@@ -44,11 +44,6 @@
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
-"$": "delete me", 
-"@property": "ot:tag", 
-"@xsi:type": "nex:LiteralMeta"
-}, 
-{
 "$": "Open Tree NexSON validation", 
 "@property": "ot:annotation", 
 "@xsi:type": "nex:ResourceMeta", 
@@ -90,10 +85,10 @@
 }, 
 "name": "normalize_ot_nexson.py", 
 "url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
-"version": "0.0.1a"
+"version": "0.0.2a"
 }, 
-"dateCreated": "2013-10-13T04:33:55.177854", 
-"id": "meta-ab4a924e-33c0-11e3-a6a2-5891cf52fe1d", 
+"dateCreated": "2013-10-27T02:48:50.953866", 
+"id": "meta-4f76d336-3eb2-11e3-9934-5891cf52fe1d", 
 "isValid": false, 
 "messages": [
 {
@@ -108,14 +103,54 @@
 "severity": "WARNING"
 }, 
 {
-"code": "UNRECOGNIZED_TAG", 
-"comment": "Unrecognized value for a tag: \"delete me\" in \"meta\" in \"nexml(id=None)\"\n", 
-"data": "delete me", 
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu258811)\"\n", 
+"data": "@property=ot:ottid", 
 "preserve": false, 
 "refersTo": {
 "inMeta": true, 
-"property": "ot:tag", 
-"top": "meta"
+"otuID": "otu258811", 
+"otusID": "otus1557", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu258812)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu258812", 
+"otusID": "otus1557", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu258813)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu258813", 
+"otusID": "otus1557", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu258814)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu258814", 
+"otusID": "otus1557", 
+"top": "otus"
 }, 
 "severity": "WARNING"
 }, 
@@ -126,6 +161,62 @@
 "preserve": false, 
 "refersTo": {
 "inMeta": true, 
+"top": "trees", 
+"treeID": "tree3120", 
+"treesID": "trees1557"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu258813\") which does not have an OTT ID in \"node(id=node636884)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node636884", 
+"top": "trees", 
+"treeID": "tree3120", 
+"treesID": "trees1557"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu258811\") which does not have an OTT ID in \"node(id=node636886)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node636886", 
+"top": "trees", 
+"treeID": "tree3120", 
+"treesID": "trees1557"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu258812\") which does not have an OTT ID in \"node(id=node636888)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node636888", 
+"top": "trees", 
+"treeID": "tree3120", 
+"treesID": "trees1557"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu258814\") which does not have an OTT ID in \"node(id=node636889)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node636889", 
 "top": "trees", 
 "treeID": "tree3120", 
 "treesID": "trees1557"
@@ -145,7 +236,12 @@
 "meta": [
 {
 "$": 573304, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl106627", 
+"@property": "ot:treebaseOTUId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -162,7 +258,12 @@
 "meta": [
 {
 "$": 928472, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl106629", 
+"@property": "ot:treebaseOTUId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -179,7 +280,12 @@
 "meta": [
 {
 "$": 686304, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl106630", 
+"@property": "ot:treebaseOTUId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -196,7 +302,12 @@
 "meta": [
 {
 "$": 554309, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl64586", 
+"@property": "ot:treebaseOTUId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -213,6 +324,7 @@
 "@otus": "otus1557", 
 "tree": [
 {
+"@about": "#tree3120", 
 "@id": "tree3120", 
 "edge": [
 {
@@ -246,32 +358,81 @@
 "@target": "node636889"
 }
 ], 
+"meta": [
+{
+"$": "Fig. 6", 
+"@property": "ot:curatedType", 
+"@xsi:type": "nex:LiteralMeta"
+}
+], 
 "node": [
 {
+"@about": "#node636883", 
 "@id": "node636883", 
-"@root": "true"
+"@root": "true", 
+"meta": []
 }, 
 {
+"@about": "#node636884", 
 "@id": "node636884", 
-"@otu": "otu258813"
+"@otu": "otu258813", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
-"@id": "node636885"
+"@about": "#node636885", 
+"@id": "node636885", 
+"meta": []
 }, 
 {
+"@about": "#node636886", 
 "@id": "node636886", 
-"@otu": "otu258811"
+"@otu": "otu258811", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
-"@id": "node636887"
+"@about": "#node636887", 
+"@id": "node636887", 
+"meta": []
 }, 
 {
+"@about": "#node636888", 
 "@id": "node636888", 
-"@otu": "otu258812"
+"@otu": "otu258812", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
+"@about": "#node636889", 
 "@id": "node636889", 
-"@otu": "otu258814"
+"@otu": "otu258814", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }
 ]
 }

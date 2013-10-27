@@ -85,10 +85,10 @@
 }, 
 "name": "normalize_ot_nexson.py", 
 "url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
-"version": "0.0.1a"
+"version": "0.0.2a"
 }, 
-"dateCreated": "2013-10-13T04:36:09.348882", 
-"id": "meta-fb437964-33c0-11e3-91b2-5891cf52fe1d", 
+"dateCreated": "2013-10-27T02:51:59.893495", 
+"id": "meta-c014bffe-3eb2-11e3-a255-5891cf52fe1d", 
 "isValid": false, 
 "messages": [
 {
@@ -104,8 +104,8 @@
 }, 
 {
 "code": "MISSING_OPTIONAL_KEY", 
-"comment": "Missing optional key \"@property=ot:ottolid\" in \"meta\" in \"otu(id=otu64857)\"\n", 
-"data": "@property=ot:ottolid", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu64857)\"\n", 
+"data": "@property=ot:ottid", 
 "preserve": false, 
 "refersTo": {
 "inMeta": true, 
@@ -117,8 +117,34 @@
 }, 
 {
 "code": "MISSING_OPTIONAL_KEY", 
-"comment": "Missing optional key \"@property=ot:ottolid\" in \"meta\" in \"otu(id=otu64860)\"\n", 
-"data": "@property=ot:ottolid", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu64858)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu64858", 
+"otusID": "otus249", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu64859)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu64859", 
+"otusID": "otus249", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu64860)\"\n", 
+"data": "@property=ot:ottid", 
 "preserve": false, 
 "refersTo": {
 "inMeta": true, 
@@ -149,6 +175,34 @@
 "refersTo": {
 "inMeta": false, 
 "nodeID": "node165425", 
+"top": "trees", 
+"treeID": "tree131", 
+"treesID": "trees249"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu64858\") which does not have an OTT ID in \"node(id=node165426)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node165426", 
+"top": "trees", 
+"treeID": "tree131", 
+"treesID": "trees249"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu64859\") which does not have an OTT ID in \"node(id=node165428)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node165428", 
 "top": "trees", 
 "treeID": "tree131", 
 "treesID": "trees249"
@@ -192,7 +246,7 @@
 "meta": [
 {
 "$": 784108, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -209,7 +263,7 @@
 "meta": [
 {
 "$": 784121, 
-"@property": "ot:ottolid", 
+"@property": "ot:ottId", 
 "@xsi:type": "nex:LiteralMeta"
 }, 
 {
@@ -236,6 +290,7 @@
 "@otus": "otus249", 
 "tree": [
 {
+"@about": "#tree131", 
 "@id": "tree131", 
 "edge": [
 {
@@ -275,32 +330,81 @@
 "@target": "node165429"
 }
 ], 
+"meta": [
+{
+"$": "MP topology corresponded to BEAST chronogram", 
+"@property": "ot:curatedType", 
+"@xsi:type": "nex:LiteralMeta"
+}
+], 
 "node": [
 {
+"@about": "#node165423", 
 "@id": "node165423", 
-"@root": "true"
+"@root": "true", 
+"meta": []
 }, 
 {
-"@id": "node165424"
+"@about": "#node165424", 
+"@id": "node165424", 
+"meta": []
 }, 
 {
+"@about": "#node165425", 
 "@id": "node165425", 
-"@otu": "otu64857"
+"@otu": "otu64857", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
+"@about": "#node165426", 
 "@id": "node165426", 
-"@otu": "otu64858"
+"@otu": "otu64858", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
-"@id": "node165427"
+"@about": "#node165427", 
+"@id": "node165427", 
+"meta": []
 }, 
 {
+"@about": "#node165428", 
 "@id": "node165428", 
-"@otu": "otu64859"
+"@otu": "otu64859", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }, 
 {
+"@about": "#node165429", 
 "@id": "node165429", 
-"@otu": "otu64860"
+"@otu": "otu64860", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }
 ]
 }

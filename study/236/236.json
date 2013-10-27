@@ -85,10 +85,10 @@
 }, 
 "name": "normalize_ot_nexson.py", 
 "url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
-"version": "0.0.1a"
+"version": "0.0.2a"
 }, 
-"dateCreated": "2013-10-13T04:35:49.130355", 
-"id": "meta-ef3657ea-33c0-11e3-a294-5891cf52fe1d", 
+"dateCreated": "2013-10-27T02:51:30.565506", 
+"id": "meta-ae99a8de-3eb2-11e3-ad80-5891cf52fe1d", 
 "isValid": false, 
 "messages": [
 {
@@ -122,8 +122,8 @@
 }, 
 {
 "code": "MISSING_OPTIONAL_KEY", 
-"comment": "Missing optional key \"@property=ot:ottolid\" in \"meta\" in \"otu(id=otu62987)\"\n", 
-"data": "@property=ot:ottolid", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu62987)\"\n", 
+"data": "@property=ot:ottid", 
 "preserve": false, 
 "refersTo": {
 "inMeta": true, 
@@ -196,6 +196,7 @@
 "@otus": "otus236", 
 "tree": [
 {
+"@about": "#tree98", 
 "@id": "tree98", 
 "edge": [
 {
@@ -204,10 +205,26 @@
 "@target": "node153776"
 }
 ], 
+"meta": [
+{
+"$": "50% Majority-rule Consensus of the 18 shortest trees found in the search of the MP trees using the five-gene DNA sequence matrix", 
+"@property": "ot:curatedType", 
+"@xsi:type": "nex:LiteralMeta"
+}
+], 
 "node": [
 {
+"@about": "#node153776", 
 "@id": "node153776", 
-"@otu": "otu62987"
+"@otu": "otu62987", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
 }
 ]
 }
