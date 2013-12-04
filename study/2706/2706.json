@@ -1,0 +1,1796 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexmljson": "http://opentree.wikispaces.com/NexSON", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"meta": [
+{
+"$": "Oliveira J.V., Santos R.A., Borges T.A., Rosa C.A., Goldman G.H., & Ria\u00f1o-pach\u00f3n D.M. 2013. Pseudozyma brasiliensis sp. nov. a novel xylanolytic ustilaginomycetous yeast species isolated from an insect pest of sugarcane roots. International Journal of Systematic and Evolutionary Microbiology, .", 
+"@property": "ot:studyPublicationReference", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Romina Gazis", 
+"@property": "ot:curatorName", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14822", 
+"@property": "ot:dataDeposit", 
+"@xsi:type": "nex:ResourceMeta"
+}, 
+{
+"$": "2706", 
+"@property": "ot:studyId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": 2013, 
+"@property": "ot:studyYear", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": 2765255, 
+"@property": "ot:focalClade", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ML", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ITS", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "LSU", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Open Tree NexSON validation", 
+"@property": "ot:annotation", 
+"@xsi:type": "nex:ResourceMeta", 
+"author": {
+"description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY"
+], 
+"commandLine": [
+"--validate", 
+"--embed"
+], 
+"pythonImplementation": "CPython", 
+"pythonVersion": "2.7.5"
+}, 
+"name": "normalize_ot_nexson.py", 
+"url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
+"version": "0.0.2a"
+}, 
+"dateCreated": "2013-12-04T23:12:02.008763", 
+"id": "meta-7ba39e8a-5d39-11e3-b87d-5891cf52fe1d", 
+"isValid": false, 
+"messages": [
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:studyPublication\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "@property=ot:studyPublication", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:studyPublication", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ML\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "ML", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ITS\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "ITS", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"LSU\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "LSU", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405467)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405467", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405468)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405468", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405469)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405469", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405470)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405470", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405471)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405471", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405472)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405472", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405473)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405473", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405474)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405474", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405475)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405475", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405476)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405476", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405477)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405477", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405478)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405478", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405479)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405479", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405480)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405480", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405481)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405481", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405482)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405482", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405483)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405483", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405484)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405484", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405485)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405485", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405486)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405486", 
+"otusID": "otus2706", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ML\" in \"meta\" in \"tree(id=tree6280)\"\n", 
+"data": "ML", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ITS\" in \"meta\" in \"tree(id=tree6280)\"\n", 
+"data": "ITS", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"LSU\" in \"meta\" in \"tree(id=tree6280)\"\n", 
+"data": "LSU", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405467\") which does not have an OTT ID in \"node(id=node1086342)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086342", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405471\") which does not have an OTT ID in \"node(id=node1086343)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086343", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405476\") which does not have an OTT ID in \"node(id=node1086346)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086346", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405485\") which does not have an OTT ID in \"node(id=node1086348)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086348", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405478\") which does not have an OTT ID in \"node(id=node1086350)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086350", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405475\") which does not have an OTT ID in \"node(id=node1086351)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086351", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405482\") which does not have an OTT ID in \"node(id=node1086354)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086354", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405470\") which does not have an OTT ID in \"node(id=node1086355)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086355", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405484\") which does not have an OTT ID in \"node(id=node1086358)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086358", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405473\") which does not have an OTT ID in \"node(id=node1086359)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086359", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405479\") which does not have an OTT ID in \"node(id=node1086362)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086362", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405468\") which does not have an OTT ID in \"node(id=node1086364)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086364", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405474\") which does not have an OTT ID in \"node(id=node1086365)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086365", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405477\") which does not have an OTT ID in \"node(id=node1086368)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086368", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405480\") which does not have an OTT ID in \"node(id=node1086369)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086369", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405472\") which does not have an OTT ID in \"node(id=node1086372)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086372", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405469\") which does not have an OTT ID in \"node(id=node1086373)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086373", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405483\") which does not have an OTT ID in \"node(id=node1086375)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086375", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405481\") which does not have an OTT ID in \"node(id=node1086377)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086377", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405486\") which does not have an OTT ID in \"node(id=node1086378)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1086378", 
+"top": "trees", 
+"treeID": "tree6280", 
+"treesID": "trees2706"
+}, 
+"severity": "WARNING"
+}
+]
+}
+], 
+"otus": {
+"@id": "otus2706", 
+"otu": [
+{
+"@about": "#otu405467", 
+"@id": "otu405467", 
+"@label": "Cintractia axicola", 
+"meta": [
+{
+"$": 1045803, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257779", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Cintractia axicola", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405468", 
+"@id": "otu405468", 
+"@label": "Pseudozyma flocculosa", 
+"meta": [
+{
+"$": 548806, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257780", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma flocculosa", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405469", 
+"@id": "otu405469", 
+"@label": "Pseudozyma shanxiensis", 
+"meta": [
+{
+"$": 835485, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257781", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma shanxiensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405470", 
+"@id": "otu405470", 
+"@label": "Pseudozyma tsukubaensis", 
+"meta": [
+{
+"$": 408230, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257782", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma tsukubaensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405471", 
+"@id": "otu405471", 
+"@label": "Trichocintractia utriculicola", 
+"meta": [
+{
+"$": 995705, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257783", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Trichocintractia utriculicola", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405472", 
+"@id": "otu405472", 
+"@label": "Pseudozyma", 
+"meta": [
+{
+"$": 1066413, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257784", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma abaconensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405473", 
+"@id": "otu405473", 
+"@label": "Pseudozyma prolifica", 
+"meta": [
+{
+"$": 548807, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257785", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma prolifica", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405474", 
+"@id": "otu405474", 
+"@label": "Pseudozyma jejuensis", 
+"meta": [
+{
+"$": 563156, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257786", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma jejuensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405475", 
+"@id": "otu405475", 
+"@label": "Pseudozyma rugulosa", 
+"meta": [
+{
+"$": 548809, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257787", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma rugulosa", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405476", 
+"@id": "otu405476", 
+"@label": "Pseudozyma parantarctica", 
+"meta": [
+{
+"$": 664202, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257788", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma parantarctica", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405477", 
+"@id": "otu405477", 
+"@label": "Pseudozyma churashimaensis", 
+"meta": [
+{
+"$": 947415, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257789", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma churashimaensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405478", 
+"@id": "otu405478", 
+"@label": "Pseudozyma aphidis", 
+"meta": [
+{
+"$": 548812, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257790", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma aphidis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405479", 
+"@id": "otu405479", 
+"@label": "Pseudozyma graminicola", 
+"meta": [
+{
+"$": 967927, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257791", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma graminicola", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405480", 
+"@id": "otu405480", 
+"@label": "Pseudozyma", 
+"meta": [
+{
+"$": 1066413, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257792", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma pruni", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405481", 
+"@id": "otu405481", 
+"@label": "Pseudozyma", 
+"meta": [
+{
+"$": 1066413, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257793", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma brasiliensis sp. nov. GHG001", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405482", 
+"@id": "otu405482", 
+"@label": "Pseudozyma thailandica", 
+"meta": [
+{
+"$": 664198, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257794", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma thailandica", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405483", 
+"@id": "otu405483", 
+"@label": "Pseudozyma fusiformata", 
+"meta": [
+{
+"$": 548811, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257795", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma fusiformata", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405484", 
+"@id": "otu405484", 
+"@label": "Pseudozyma hubeiensis", 
+"meta": [
+{
+"$": 613864, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257796", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma hubeiensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405485", 
+"@id": "otu405485", 
+"@label": "Pseudozyma antarctica", 
+"meta": [
+{
+"$": 548808, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257797", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma antarctica", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405486", 
+"@id": "otu405486", 
+"@label": "Pseudozyma", 
+"meta": [
+{
+"$": 1066413, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1257798", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pseudozyma vetiver", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}
+]
+}, 
+"trees": {
+"@id": "trees2706", 
+"@otus": "otus2706", 
+"tree": [
+{
+"@about": "#tree6280", 
+"@id": "tree6280", 
+"edge": [
+{
+"@id": "edge1086341", 
+"@length": 0.10072590169014614, 
+"@source": "node1086340", 
+"@target": "node1086341"
+}, 
+{
+"@id": "edge1086342", 
+"@length": 0.13226247865773857, 
+"@source": "node1086341", 
+"@target": "node1086342"
+}, 
+{
+"@id": "edge1086343", 
+"@length": 0.2168529915095233, 
+"@source": "node1086341", 
+"@target": "node1086343"
+}, 
+{
+"@id": "edge1086344", 
+"@length": 0.10072590169, 
+"@source": "node1086340", 
+"@target": "node1086344"
+}, 
+{
+"@id": "edge1086345", 
+"@length": 0.05997719719312161, 
+"@source": "node1086344", 
+"@target": "node1086345"
+}, 
+{
+"@id": "edge1086346", 
+"@length": 0.022368393667128204, 
+"@source": "node1086345", 
+"@target": "node1086346"
+}, 
+{
+"@id": "edge1086347", 
+"@length": 0.01774198368516497, 
+"@source": "node1086345", 
+"@target": "node1086347"
+}, 
+{
+"@id": "edge1086348", 
+"@length": 0.008437119411861167, 
+"@source": "node1086347", 
+"@target": "node1086348"
+}, 
+{
+"@id": "edge1086349", 
+"@length": 0.010797489200049883, 
+"@source": "node1086347", 
+"@target": "node1086349"
+}, 
+{
+"@id": "edge1086350", 
+"@length": 0.0018743415558596544, 
+"@source": "node1086349", 
+"@target": "node1086350"
+}, 
+{
+"@id": "edge1086351", 
+"@length": 0.005185292307980825, 
+"@source": "node1086349", 
+"@target": "node1086351"
+}, 
+{
+"@id": "edge1086352", 
+"@length": 0.008983989464654627, 
+"@source": "node1086344", 
+"@target": "node1086352"
+}, 
+{
+"@id": "edge1086353", 
+"@length": 0.023516657911107408, 
+"@source": "node1086352", 
+"@target": "node1086353"
+}, 
+{
+"@id": "edge1086354", 
+"@length": 0.08825556771150865, 
+"@source": "node1086353", 
+"@target": "node1086354"
+}, 
+{
+"@id": "edge1086355", 
+"@length": 0.0532297038774978, 
+"@source": "node1086353", 
+"@target": "node1086355"
+}, 
+{
+"@id": "edge1086356", 
+"@length": 0.013553583714062411, 
+"@source": "node1086352", 
+"@target": "node1086356"
+}, 
+{
+"@id": "edge1086357", 
+"@length": 0.03120192705888778, 
+"@source": "node1086356", 
+"@target": "node1086357"
+}, 
+{
+"@id": "edge1086358", 
+"@length": 0.0310350915931039, 
+"@source": "node1086357", 
+"@target": "node1086358"
+}, 
+{
+"@id": "edge1086359", 
+"@length": 0.11174026573344317, 
+"@source": "node1086357", 
+"@target": "node1086359"
+}, 
+{
+"@id": "edge1086360", 
+"@length": 0.006882292192355504, 
+"@source": "node1086356", 
+"@target": "node1086360"
+}, 
+{
+"@id": "edge1086361", 
+"@length": 0.01927679068566962, 
+"@source": "node1086360", 
+"@target": "node1086361"
+}, 
+{
+"@id": "edge1086362", 
+"@length": 0.11317665512246801, 
+"@source": "node1086361", 
+"@target": "node1086362"
+}, 
+{
+"@id": "edge1086363", 
+"@length": 0.016647343063628698, 
+"@source": "node1086361", 
+"@target": "node1086363"
+}, 
+{
+"@id": "edge1086364", 
+"@length": 0.07754697563100002, 
+"@source": "node1086363", 
+"@target": "node1086364"
+}, 
+{
+"@id": "edge1086365", 
+"@length": 0.0880830581868277, 
+"@source": "node1086363", 
+"@target": "node1086365"
+}, 
+{
+"@id": "edge1086366", 
+"@length": 0.014476287143711745, 
+"@source": "node1086360", 
+"@target": "node1086366"
+}, 
+{
+"@id": "edge1086367", 
+"@length": 0.012132453364664071, 
+"@source": "node1086366", 
+"@target": "node1086367"
+}, 
+{
+"@id": "edge1086368", 
+"@length": 0.052160281585779206, 
+"@source": "node1086367", 
+"@target": "node1086368"
+}, 
+{
+"@id": "edge1086369", 
+"@length": 0.07154300342847511, 
+"@source": "node1086367", 
+"@target": "node1086369"
+}, 
+{
+"@id": "edge1086370", 
+"@length": 0.009617929488828334, 
+"@source": "node1086366", 
+"@target": "node1086370"
+}, 
+{
+"@id": "edge1086371", 
+"@length": 0.05467068183039852, 
+"@source": "node1086370", 
+"@target": "node1086371"
+}, 
+{
+"@id": "edge1086372", 
+"@length": 0.050384101051662265, 
+"@source": "node1086371", 
+"@target": "node1086372"
+}, 
+{
+"@id": "edge1086373", 
+"@length": 0.013321307077960906, 
+"@source": "node1086371", 
+"@target": "node1086373"
+}, 
+{
+"@id": "edge1086374", 
+"@length": 0.030353490217789852, 
+"@source": "node1086370", 
+"@target": "node1086374"
+}, 
+{
+"@id": "edge1086375", 
+"@length": 0.040881396282352864, 
+"@source": "node1086374", 
+"@target": "node1086375"
+}, 
+{
+"@id": "edge1086376", 
+"@length": 0.06403384894441859, 
+"@source": "node1086374", 
+"@target": "node1086376"
+}, 
+{
+"@id": "edge1086377", 
+"@length": 0.020910514644736648, 
+"@source": "node1086376", 
+"@target": "node1086377"
+}, 
+{
+"@id": "edge1086378", 
+"@length": 0.026916901673336862, 
+"@source": "node1086376", 
+"@target": "node1086378"
+}
+], 
+"meta": [
+{
+"$": "node1086344", 
+"@property": "ot:inGroupClade", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ML", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ITS", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "LSU", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ML, ITS + LSU", 
+"@property": "ot:curatedType", 
+"@xsi:type": "nex:LiteralMeta"
+}
+], 
+"node": [
+{
+"@id": "node1086340", 
+"@root": "true"
+}, 
+{
+"@id": "node1086341"
+}, 
+{
+"@about": "#node1086342", 
+"@id": "node1086342", 
+"@otu": "otu405467", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086343", 
+"@id": "node1086343", 
+"@otu": "otu405471", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086344"
+}, 
+{
+"@id": "node1086345"
+}, 
+{
+"@about": "#node1086346", 
+"@id": "node1086346", 
+"@otu": "otu405476", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086347"
+}, 
+{
+"@about": "#node1086348", 
+"@id": "node1086348", 
+"@otu": "otu405485", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086349"
+}, 
+{
+"@about": "#node1086350", 
+"@id": "node1086350", 
+"@otu": "otu405478", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086351", 
+"@id": "node1086351", 
+"@otu": "otu405475", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086352"
+}, 
+{
+"@id": "node1086353"
+}, 
+{
+"@about": "#node1086354", 
+"@id": "node1086354", 
+"@otu": "otu405482", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086355", 
+"@id": "node1086355", 
+"@otu": "otu405470", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086356"
+}, 
+{
+"@id": "node1086357"
+}, 
+{
+"@about": "#node1086358", 
+"@id": "node1086358", 
+"@otu": "otu405484", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086359", 
+"@id": "node1086359", 
+"@otu": "otu405473", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086360"
+}, 
+{
+"@id": "node1086361"
+}, 
+{
+"@about": "#node1086362", 
+"@id": "node1086362", 
+"@otu": "otu405479", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086363"
+}, 
+{
+"@about": "#node1086364", 
+"@id": "node1086364", 
+"@otu": "otu405468", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086365", 
+"@id": "node1086365", 
+"@otu": "otu405474", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086366"
+}, 
+{
+"@id": "node1086367"
+}, 
+{
+"@about": "#node1086368", 
+"@id": "node1086368", 
+"@otu": "otu405477", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086369", 
+"@id": "node1086369", 
+"@otu": "otu405480", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086370"
+}, 
+{
+"@id": "node1086371"
+}, 
+{
+"@about": "#node1086372", 
+"@id": "node1086372", 
+"@otu": "otu405472", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086373", 
+"@id": "node1086373", 
+"@otu": "otu405469", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086374"
+}, 
+{
+"@about": "#node1086375", 
+"@id": "node1086375", 
+"@otu": "otu405483", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1086376"
+}, 
+{
+"@about": "#node1086377", 
+"@id": "node1086377", 
+"@otu": "otu405481", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1086378", 
+"@id": "node1086378", 
+"@otu": "otu405486", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}
+]
+}
+]
+}
+}
+}

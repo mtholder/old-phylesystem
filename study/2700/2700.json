@@ -1,0 +1,4940 @@
+{
+"nexml": {
+"@about": "#study", 
+"@generator": "Phylografter nexml-json exporter", 
+"@id": "study", 
+"@nexmljson": "http://opentree.wikispaces.com/NexSON", 
+"@version": "0.9", 
+"@xmlns": {
+"$": "http://www.nexml.org/2009", 
+"nex": "http://www.nexml.org/2009", 
+"ot": "http://purl.org/opentree-terms#", 
+"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"xsi": "http://www.w3.org/2001/XMLSchema-instance"
+}, 
+"meta": [
+{
+"$": "Alves J.L., Woudenberg J., Duarte L.L., Crous P.W., & Barreto R. 2013. Reappraisal of the genus Alternariaster (Dothideomycetes). Persoonia: Molecular Phylogeny and Evolution of Fungi, .", 
+"@property": "ot:studyPublicationReference", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Romina Gazis", 
+"@property": "ot:curatorName", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14185", 
+"@property": "ot:dataDeposit", 
+"@xsi:type": "nex:ResourceMeta"
+}, 
+{
+"$": "2700", 
+"@property": "ot:studyId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": 2013, 
+"@property": "ot:studyYear", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": 4785834, 
+"@property": "ot:focalClade", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "BI", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ITS", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "LSU", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Open Tree NexSON validation", 
+"@property": "ot:annotation", 
+"@xsi:type": "nex:ResourceMeta", 
+"author": {
+"description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"invocation": {
+"checksPerformed": [
+"MISSING_MANDATORY_KEY", 
+"MISSING_OPTIONAL_KEY", 
+"UNRECOGNIZED_KEY", 
+"MISSING_LIST_EXPECTED", 
+"DUPLICATING_SINGLETON_KEY", 
+"REFERENCED_ID_NOT_FOUND", 
+"REPEATED_ID", 
+"MULTIPLE_ROOT_NODES", 
+"NO_ROOT_NODE", 
+"MULTIPLE_EDGES_FOR_NODES", 
+"CYCLE_DETECTED", 
+"DISCONNECTED_GRAPH_DETECTED", 
+"INCORRECT_ROOT_NODE_LABEL", 
+"TIP_WITHOUT_OTU", 
+"TIP_WITHOUT_OTT_ID", 
+"MULTIPLE_TIPS_MAPPED_TO_OTT_ID", 
+"NON_MONOPHYLETIC_TIPS_MAPPED_TO_OTT_ID", 
+"INVALID_PROPERTY_VALUE", 
+"PROPERTY_VALUE_NOT_USEFUL", 
+"UNRECOGNIZED_PROPERTY_VALUE", 
+"MULTIPLE_TREES", 
+"UNRECOGNIZED_TAG", 
+"CONFLICTING_PROPERTY_VALUES", 
+"NO_TREES", 
+"DEPRECATED_PROPERTY"
+], 
+"commandLine": [
+"--validate", 
+"--embed"
+], 
+"pythonImplementation": "CPython", 
+"pythonVersion": "2.7.5"
+}, 
+"name": "normalize_ot_nexson.py", 
+"url": "https://github.com/OpenTreeOfLife/api.opentreeoflife.org", 
+"version": "0.0.2a"
+}, 
+"dateCreated": "2013-12-04T23:12:01.373385", 
+"id": "meta-7b42ab48-5d39-11e3-b3c6-5891cf52fe1d", 
+"isValid": false, 
+"messages": [
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:studyPublication\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "@property=ot:studyPublication", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:studyPublication", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"BI\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "BI", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ITS\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "ITS", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"LSU\" in \"meta\" in \"nexml(id=None)\"\n", 
+"data": "LSU", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "meta"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405083)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405083", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405084)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405084", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405085)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405085", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405086)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405086", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405087)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405087", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405088)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405088", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405089)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405089", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405090)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405090", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405091)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405091", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405092)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405092", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405093)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405093", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405094)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405094", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405095)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405095", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405096)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405096", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405097)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405097", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405098)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405098", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405099)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405099", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405100)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405100", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405101)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405101", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405102)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405102", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405103)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405103", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405104)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405104", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405105)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405105", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405106)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405106", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405107)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405107", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405108)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405108", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405109)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405109", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405110)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405110", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405111)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405111", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405112)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405112", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405113)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405113", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405114)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405114", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405115)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405115", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405116)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405116", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405117)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405117", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405118)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405118", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405119)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405119", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405120)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405120", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405121)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405121", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405122)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405122", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405123)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405123", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405124)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405124", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405125)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405125", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405126)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405126", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405127)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405127", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405128)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405128", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405129)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405129", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405130)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405130", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405131)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405131", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405132)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405132", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405133)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405133", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405134)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405134", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405135)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405135", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405136)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405136", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405137)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405137", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405138)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405138", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405139)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405139", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405140)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405140", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405141)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405141", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405142)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405142", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "MISSING_OPTIONAL_KEY", 
+"comment": "Missing optional key \"@property=ot:ottid\" in \"meta\" in \"otu(id=otu405143)\"\n", 
+"data": "@property=ot:ottid", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"otuID": "otu405143", 
+"otusID": "otus2700", 
+"property": "ot:ottid", 
+"top": "otus"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"BI\" in \"meta\" in \"tree(id=tree6268)\"\n", 
+"data": "BI", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"ITS\" in \"meta\" in \"tree(id=tree6268)\"\n", 
+"data": "ITS", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "UNRECOGNIZED_TAG", 
+"comment": "Unrecognized value for a tag: \"LSU\" in \"meta\" in \"tree(id=tree6268)\"\n", 
+"data": "LSU", 
+"preserve": false, 
+"refersTo": {
+"inMeta": true, 
+"property": "ot:tag", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405107\") which does not have an OTT ID in \"node(id=node1085108)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085108", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405083\") which does not have an OTT ID in \"node(id=node1085111)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085111", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405087\") which does not have an OTT ID in \"node(id=node1085112)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085112", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405135\") which does not have an OTT ID in \"node(id=node1085113)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085113", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405138\") which does not have an OTT ID in \"node(id=node1085115)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085115", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405126\") which does not have an OTT ID in \"node(id=node1085116)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085116", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405133\") which does not have an OTT ID in \"node(id=node1085124)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085124", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405114\") which does not have an OTT ID in \"node(id=node1085126)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085126", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405116\") which does not have an OTT ID in \"node(id=node1085127)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085127", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405121\") which does not have an OTT ID in \"node(id=node1085128)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085128", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405112\") which does not have an OTT ID in \"node(id=node1085129)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085129", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405123\") which does not have an OTT ID in \"node(id=node1085130)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085130", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405120\") which does not have an OTT ID in \"node(id=node1085132)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085132", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405098\") which does not have an OTT ID in \"node(id=node1085133)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085133", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405119\") which does not have an OTT ID in \"node(id=node1085141)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085141", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405143\") which does not have an OTT ID in \"node(id=node1085142)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085142", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405106\") which does not have an OTT ID in \"node(id=node1085143)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085143", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405088\") which does not have an OTT ID in \"node(id=node1085144)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085144", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405110\") which does not have an OTT ID in \"node(id=node1085146)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085146", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405128\") which does not have an OTT ID in \"node(id=node1085148)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085148", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405086\") which does not have an OTT ID in \"node(id=node1085149)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085149", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405140\") which does not have an OTT ID in \"node(id=node1085153)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085153", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405102\") which does not have an OTT ID in \"node(id=node1085154)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085154", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405103\") which does not have an OTT ID in \"node(id=node1085155)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085155", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405108\") which does not have an OTT ID in \"node(id=node1085159)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085159", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405124\") which does not have an OTT ID in \"node(id=node1085161)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085161", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405099\") which does not have an OTT ID in \"node(id=node1085162)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085162", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405085\") which does not have an OTT ID in \"node(id=node1085163)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085163", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405111\") which does not have an OTT ID in \"node(id=node1085164)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085164", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405096\") which does not have an OTT ID in \"node(id=node1085165)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085165", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405139\") which does not have an OTT ID in \"node(id=node1085166)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085166", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405094\") which does not have an OTT ID in \"node(id=node1085167)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085167", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405093\") which does not have an OTT ID in \"node(id=node1085169)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085169", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405095\") which does not have an OTT ID in \"node(id=node1085170)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085170", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405137\") which does not have an OTT ID in \"node(id=node1085175)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085175", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405109\") which does not have an OTT ID in \"node(id=node1085176)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085176", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405122\") which does not have an OTT ID in \"node(id=node1085177)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085177", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405132\") which does not have an OTT ID in \"node(id=node1085178)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085178", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405125\") which does not have an OTT ID in \"node(id=node1085182)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085182", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405129\") which does not have an OTT ID in \"node(id=node1085183)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085183", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405090\") which does not have an OTT ID in \"node(id=node1085185)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085185", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405101\") which does not have an OTT ID in \"node(id=node1085186)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085186", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405105\") which does not have an OTT ID in \"node(id=node1085187)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085187", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405084\") which does not have an OTT ID in \"node(id=node1085192)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085192", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405097\") which does not have an OTT ID in \"node(id=node1085193)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085193", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405113\") which does not have an OTT ID in \"node(id=node1085198)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085198", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405104\") which does not have an OTT ID in \"node(id=node1085199)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085199", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405092\") which does not have an OTT ID in \"node(id=node1085202)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085202", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405131\") which does not have an OTT ID in \"node(id=node1085203)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085203", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405142\") which does not have an OTT ID in \"node(id=node1085204)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085204", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405100\") which does not have an OTT ID in \"node(id=node1085205)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085205", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405134\") which does not have an OTT ID in \"node(id=node1085206)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085206", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405091\") which does not have an OTT ID in \"node(id=node1085207)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085207", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405136\") which does not have an OTT ID in \"node(id=node1085208)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085208", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405115\") which does not have an OTT ID in \"node(id=node1085212)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085212", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405118\") which does not have an OTT ID in \"node(id=node1085213)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085213", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405089\") which does not have an OTT ID in \"node(id=node1085215)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085215", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405141\") which does not have an OTT ID in \"node(id=node1085216)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085216", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405127\") which does not have an OTT ID in \"node(id=node1085218)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085218", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405117\") which does not have an OTT ID in \"node(id=node1085220)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085220", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}, 
+{
+"code": "TIP_WITHOUT_OTT_ID", 
+"comment": "Tip node mapped to an OTU (\"otu405130\") which does not have an OTT ID in \"node(id=node1085221)\"\n", 
+"data": null, 
+"preserve": false, 
+"refersTo": {
+"inMeta": false, 
+"nodeID": "node1085221", 
+"top": "trees", 
+"treeID": "tree6268", 
+"treesID": "trees2700"
+}, 
+"severity": "WARNING"
+}
+]
+}
+], 
+"otus": {
+"@id": "otus2700", 
+"otu": [
+{
+"@about": "#otu405083", 
+"@id": "otu405083", 
+"@label": "Cucurbitaria berberidis", 
+"meta": [
+{
+"$": 659811, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086615", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Cucurbitaria berberidis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405084", 
+"@id": "otu405084", 
+"@label": "Leptosphaeria conoidea", 
+"meta": [
+{
+"$": 1095029, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086616", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria conoidea", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405085", 
+"@id": "otu405085", 
+"@label": "Plenodomus libanotidis", 
+"meta": [
+{
+"$": 1010751, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086617", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus libanotidis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405086", 
+"@id": "otu405086", 
+"@label": "Plenodomus lindquistii", 
+"meta": [
+{
+"$": 784103, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086618", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus lindquistii", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405087", 
+"@id": "otu405087", 
+"@label": "Pyrenochaeta cava", 
+"meta": [
+{
+"$": 948556, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086619", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pyrenochaeta cava", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405088", 
+"@id": "otu405088", 
+"@label": "Plenodomus visci", 
+"meta": [
+{
+"$": 552833, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086620", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus visci", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405089", 
+"@id": "otu405089", 
+"@label": "Coniothyrium dolichi", 
+"meta": [
+{
+"$": 928515, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086621", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium dolichi", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405090", 
+"@id": "otu405090", 
+"@label": "Paraleptosphaeria macrospora", 
+"meta": [
+{
+"$": 842111, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086622", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Paraleptosphaeria macrospora", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405091", 
+"@id": "otu405091", 
+"@label": "Leptosphaeria rubefaciens", 
+"meta": [
+{
+"$": 877838, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086623", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria rubefaciens", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405092", 
+"@id": "otu405092", 
+"@label": "Leptosphaeria errabunda", 
+"meta": [
+{
+"$": 231138, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086624", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria errabunda", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405093", 
+"@id": "otu405093", 
+"@label": "Heterospora chenopodii", 
+"meta": [
+{
+"$": 31674, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086625", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Heterospora chenopodii", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405094", 
+"@id": "otu405094", 
+"@label": "Leptosphaeria maculans", 
+"meta": [
+{
+"$": 581438, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086626", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus lingam", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405095", 
+"@id": "otu405095", 
+"@label": "Heterospora dimorphospora", 
+"meta": [
+{
+"$": 681676, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086627", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Heterospora dimorphospora", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405096", 
+"@id": "otu405096", 
+"@label": "Plenodomus enteroleucus", 
+"meta": [
+{
+"$": 630079, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086628", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus enteroleucus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405097", 
+"@id": "otu405097", 
+"@label": "Leptosphaeria sclerotioides", 
+"meta": [
+{
+"$": 877826, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086629", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria sclerotioides", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405098", 
+"@id": "otu405098", 
+"@label": "Alternariaster", 
+"meta": [
+{
+"$": 4081335, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086630", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster bidentis CBS 134185", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405099", 
+"@id": "otu405099", 
+"@label": "Plenodomus chrysanthemi", 
+"meta": [
+{
+"$": 4387, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086631", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus chrysanthemi", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405100", 
+"@id": "otu405100", 
+"@label": "Leptosphaeria pedicularis", 
+"meta": [
+{
+"$": 1017102, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086632", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria pedicularis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405101", 
+"@id": "otu405101", 
+"@label": "Paraleptosphaeria nitschkei", 
+"meta": [
+{
+"$": 707017, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086633", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Paraleptosphaeria nitschkei", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405102", 
+"@id": "otu405102", 
+"@label": "Plenodomus wasabiae", 
+"meta": [
+{
+"$": 721356, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086634", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus wasabiae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405103", 
+"@id": "otu405103", 
+"@label": "Plenodomus pimpinellae", 
+"meta": [
+{
+"$": 707011, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086635", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus pimpinellae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405104", 
+"@id": "otu405104", 
+"@label": "Leptosphaeria veronicae", 
+"meta": [
+{
+"$": 836004, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086636", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria veronicae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405105", 
+"@id": "otu405105", 
+"@label": "Paraleptosphaeria orobanches", 
+"meta": [
+{
+"$": 877842, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086637", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Paraleptosphaeria orobanches", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405106", 
+"@id": "otu405106", 
+"@label": "Plenodomus lupini", 
+"meta": [
+{
+"$": 168922, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086638", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus lupini", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405107", 
+"@id": "otu405107", 
+"@label": "Phoma herbarum", 
+"meta": [
+{
+"$": 437937, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086639", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Phoma herbarum", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405108", 
+"@id": "otu405108", 
+"@label": "Plenodomus congestus", 
+"meta": [
+{
+"$": 309136, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086640", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus congestus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405109", 
+"@id": "otu405109", 
+"@label": "Subplenodomus valerianae", 
+"meta": [
+{
+"$": 4382, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086641", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Subplenodomus valerianae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405110", 
+"@id": "otu405110", 
+"@label": "Plenodomus collinsoniae", 
+"meta": [
+{
+"$": 1010710, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086642", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus collinsoniae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405111", 
+"@id": "otu405111", 
+"@label": "Plenodomus hendersoniae", 
+"meta": [
+{
+"$": 1010779, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086643", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus hendersoniae", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405112", 
+"@id": "otu405112", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086644", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 327.69", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405113", 
+"@id": "otu405113", 
+"@label": "Leptosphaeria doliolum", 
+"meta": [
+{
+"$": 538157, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086645", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria doliolum", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405114", 
+"@id": "otu405114", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086646", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 134018", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405115", 
+"@id": "otu405115", 
+"@label": "Coniothyrium carteri", 
+"meta": [
+{
+"$": 928511, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086647", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium carteri", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405116", 
+"@id": "otu405116", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086648", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 134019", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405117", 
+"@id": "otu405117", 
+"@label": "Coniothyrium telephii", 
+"meta": [
+{
+"$": 948561, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086649", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium telephii CBS 101636", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405118", 
+"@id": "otu405118", 
+"@label": "Coniothyrium palmarum", 
+"meta": [
+{
+"$": 43686, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086650", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium palmarum", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405119", 
+"@id": "otu405119", 
+"@label": "Plenodomus agnitus", 
+"meta": [
+{
+"$": 230683, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086651", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus agnitus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405120", 
+"@id": "otu405120", 
+"@label": "Alternariaster", 
+"meta": [
+{
+"$": 4081335, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086652", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster bidentis CBS 134021", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405121", 
+"@id": "otu405121", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086653", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 134020", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405122", 
+"@id": "otu405122", 
+"@label": "Subplenodomus drobnjacensis", 
+"meta": [
+{
+"$": 256244, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086654", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Subplenodomus drobnjacensis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405123", 
+"@id": "otu405123", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086655", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 199.86", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405124", 
+"@id": "otu405124", 
+"@label": "Plenodomus tracheiphilus", 
+"meta": [
+{
+"$": 877829, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086656", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus tracheiphilus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405125", 
+"@id": "otu405125", 
+"@label": "Paraleptosphaeria dryadis", 
+"meta": [
+{
+"$": 309134, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086657", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Paraleptosphaeria dryadis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405126", 
+"@id": "otu405126", 
+"@label": "Pyrenochaetopsis pratorum", 
+"meta": [
+{
+"$": 836018, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086658", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pyrenochaetopsis pratorum", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405127", 
+"@id": "otu405127", 
+"@label": "Coniothyrium multiporum", 
+"meta": [
+{
+"$": 820571, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086659", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium multiporum", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405128", 
+"@id": "otu405128", 
+"@label": "Plenodomus influorescens", 
+"meta": [
+{
+"$": 897678, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086660", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus influorescens", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405129", 
+"@id": "otu405129", 
+"@label": "Paraleptosphaeria praetermissa", 
+"meta": [
+{
+"$": 707005, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086661", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Paraleptosphaeria praetermissa", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405130", 
+"@id": "otu405130", 
+"@label": "Coniothyrium telephii", 
+"meta": [
+{
+"$": 948561, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086662", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium telephii CBS 188.71", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405131", 
+"@id": "otu405131", 
+"@label": "Leptosphaeria macrocapsa", 
+"meta": [
+{
+"$": 877833, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086663", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria macrocapsa", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405132", 
+"@id": "otu405132", 
+"@label": "Subplenodomus violicola", 
+"meta": [
+{
+"$": 582280, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086664", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Subplenodomus violicola", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405133", 
+"@id": "otu405133", 
+"@label": "Alternariaster helianthi", 
+"meta": [
+{
+"$": 4081336, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086665", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Alternariaster helianthi CBS 119672", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405134", 
+"@id": "otu405134", 
+"@label": "Leptosphaeria slovacica", 
+"meta": [
+{
+"$": 707036, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086666", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria slovacica", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405135", 
+"@id": "otu405135", 
+"@label": "Pyrenochaeta nobilis", 
+"meta": [
+{
+"$": 1027791, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086667", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pyrenochaeta nobilis", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405136", 
+"@id": "otu405136", 
+"@label": "Leptosphaeria etheridgei", 
+"meta": [
+{
+"$": 231059, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086668", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria etheridgei", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405137", 
+"@id": "otu405137", 
+"@label": "Subplenodomus apiicola", 
+"meta": [
+{
+"$": 568031, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086669", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Subplenodomus apiicola", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405138", 
+"@id": "otu405138", 
+"@label": "Pyrenochaetopsis leptospora", 
+"meta": [
+{
+"$": 1070573, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086670", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Pyrenochaetopsis leptospora", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405139", 
+"@id": "otu405139", 
+"@label": "Plenodomus confertus", 
+"meta": [
+{
+"$": 833457, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086671", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus confertus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405140", 
+"@id": "otu405140", 
+"@label": "Leptosphaeria biglobosa", 
+"meta": [
+{
+"$": 962931, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086672", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus biglobosus", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405141", 
+"@id": "otu405141", 
+"@label": "Coniothyrium glycines", 
+"meta": [
+{
+"$": 1002127, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086673", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Coniothyrium glycines", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405142", 
+"@id": "otu405142", 
+"@label": "Leptosphaeria sydowii", 
+"meta": [
+{
+"$": 551014, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086674", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Leptosphaeria sydowii", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#otu405143", 
+"@id": "otu405143", 
+"@label": "Plenodomus fallaciosus", 
+"meta": [
+{
+"$": 230093, 
+"@property": "ot:ottId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Tl1086675", 
+"@property": "ot:treebaseOTUId", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "Plenodomus fallaciosa", 
+"@property": "ot:originalLabel", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}
+]
+}, 
+"trees": {
+"@id": "trees2700", 
+"@otus": "otus2700", 
+"tree": [
+{
+"@about": "#tree6268", 
+"@id": "tree6268", 
+"edge": [
+{
+"@id": "edge1085108", 
+"@length": 0.2881621078553296, 
+"@source": "node1085107", 
+"@target": "node1085108"
+}, 
+{
+"@id": "edge1085109", 
+"@length": 0.04566677517490647, 
+"@source": "node1085107", 
+"@target": "node1085109"
+}, 
+{
+"@id": "edge1085110", 
+"@length": 0.02444824054424963, 
+"@source": "node1085109", 
+"@target": "node1085110"
+}, 
+{
+"@id": "edge1085111", 
+"@length": 0.0926917465673036, 
+"@source": "node1085110", 
+"@target": "node1085111"
+}, 
+{
+"@id": "edge1085112", 
+"@length": 0.1296355687812495, 
+"@source": "node1085110", 
+"@target": "node1085112"
+}, 
+{
+"@id": "edge1085113", 
+"@length": 0.04506981444855203, 
+"@source": "node1085109", 
+"@target": "node1085113"
+}, 
+{
+"@id": "edge1085114", 
+"@length": 0.1132994988176404, 
+"@source": "node1085109", 
+"@target": "node1085114"
+}, 
+{
+"@id": "edge1085115", 
+"@length": 0.09176478620448275, 
+"@source": "node1085114", 
+"@target": "node1085115"
+}, 
+{
+"@id": "edge1085116", 
+"@length": 0.131001158190341, 
+"@source": "node1085114", 
+"@target": "node1085116"
+}, 
+{
+"@id": "edge1085117", 
+"@length": 0.02371316624834872, 
+"@source": "node1085107", 
+"@target": "node1085117"
+}, 
+{
+"@id": "edge1085118", 
+"@length": 0.0191479714906, 
+"@source": "node1085117", 
+"@target": "node1085118"
+}, 
+{
+"@id": "edge1085119", 
+"@length": 0.01434196650473625, 
+"@source": "node1085118", 
+"@target": "node1085119"
+}, 
+{
+"@id": "edge1085120", 
+"@length": 0.01796259477672792, 
+"@source": "node1085119", 
+"@target": "node1085120"
+}, 
+{
+"@id": "edge1085121", 
+"@length": 0.02970316638024745, 
+"@source": "node1085120", 
+"@target": "node1085121"
+}, 
+{
+"@id": "edge1085122", 
+"@length": 0.0802304914451551, 
+"@source": "node1085121", 
+"@target": "node1085122"
+}, 
+{
+"@id": "edge1085123", 
+"@length": 0.01551754995022629, 
+"@source": "node1085122", 
+"@target": "node1085123"
+}, 
+{
+"@id": "edge1085124", 
+"@length": 0.001681900185205611, 
+"@source": "node1085123", 
+"@target": "node1085124"
+}, 
+{
+"@id": "edge1085125", 
+"@length": 0.002240610130050979, 
+"@source": "node1085123", 
+"@target": "node1085125"
+}, 
+{
+"@id": "edge1085126", 
+"@length": 0.0009621739093010361, 
+"@source": "node1085125", 
+"@target": "node1085126"
+}, 
+{
+"@id": "edge1085127", 
+"@length": 0.0009725919275675877, 
+"@source": "node1085125", 
+"@target": "node1085127"
+}, 
+{
+"@id": "edge1085128", 
+"@length": 0.0009825666389191938, 
+"@source": "node1085125", 
+"@target": "node1085128"
+}, 
+{
+"@id": "edge1085129", 
+"@length": 0.0009920610965999158, 
+"@source": "node1085125", 
+"@target": "node1085129"
+}, 
+{
+"@id": "edge1085130", 
+"@length": 0.000937202201194033, 
+"@source": "node1085125", 
+"@target": "node1085130"
+}, 
+{
+"@id": "edge1085131", 
+"@length": 0.02199949519196836, 
+"@source": "node1085122", 
+"@target": "node1085131"
+}, 
+{
+"@id": "edge1085132", 
+"@length": 0.0009860772197085928, 
+"@source": "node1085131", 
+"@target": "node1085132"
+}, 
+{
+"@id": "edge1085133", 
+"@length": 0.000990301971896652, 
+"@source": "node1085131", 
+"@target": "node1085133"
+}, 
+{
+"@id": "edge1085134", 
+"@length": 0.01294720199700264, 
+"@source": "node1085121", 
+"@target": "node1085134"
+}, 
+{
+"@id": "edge1085135", 
+"@length": 0.009337928124651736, 
+"@source": "node1085134", 
+"@target": "node1085135"
+}, 
+{
+"@id": "edge1085136", 
+"@length": 0.01262795833516581, 
+"@source": "node1085135", 
+"@target": "node1085136"
+}, 
+{
+"@id": "edge1085137", 
+"@length": 0.0148415076560691, 
+"@source": "node1085136", 
+"@target": "node1085137"
+}, 
+{
+"@id": "edge1085138", 
+"@length": 0.02222501868900586, 
+"@source": "node1085137", 
+"@target": "node1085138"
+}, 
+{
+"@id": "edge1085139", 
+"@length": 0.04537653253951396, 
+"@source": "node1085138", 
+"@target": "node1085139"
+}, 
+{
+"@id": "edge1085140", 
+"@length": 0.01248312810873328, 
+"@source": "node1085139", 
+"@target": "node1085140"
+}, 
+{
+"@id": "edge1085141", 
+"@length": 0.0105190704946894, 
+"@source": "node1085140", 
+"@target": "node1085141"
+}, 
+{
+"@id": "edge1085142", 
+"@length": 0.002003329341120423, 
+"@source": "node1085140", 
+"@target": "node1085142"
+}, 
+{
+"@id": "edge1085143", 
+"@length": 0.04186545608559942, 
+"@source": "node1085139", 
+"@target": "node1085143"
+}, 
+{
+"@id": "edge1085144", 
+"@length": 0.06570406866913629, 
+"@source": "node1085138", 
+"@target": "node1085144"
+}, 
+{
+"@id": "edge1085145", 
+"@length": 0.01302906907916317, 
+"@source": "node1085137", 
+"@target": "node1085145"
+}, 
+{
+"@id": "edge1085146", 
+"@length": 0.03376518141615344, 
+"@source": "node1085145", 
+"@target": "node1085146"
+}, 
+{
+"@id": "edge1085147", 
+"@length": 0.02102705883385213, 
+"@source": "node1085145", 
+"@target": "node1085147"
+}, 
+{
+"@id": "edge1085148", 
+"@length": 0.02955844987431356, 
+"@source": "node1085147", 
+"@target": "node1085148"
+}, 
+{
+"@id": "edge1085149", 
+"@length": 0.05334669358574614, 
+"@source": "node1085147", 
+"@target": "node1085149"
+}, 
+{
+"@id": "edge1085150", 
+"@length": 0.009271392693823464, 
+"@source": "node1085136", 
+"@target": "node1085150"
+}, 
+{
+"@id": "edge1085151", 
+"@length": 0.04469023643969403, 
+"@source": "node1085150", 
+"@target": "node1085151"
+}, 
+{
+"@id": "edge1085152", 
+"@length": 0.004025642306481371, 
+"@source": "node1085151", 
+"@target": "node1085152"
+}, 
+{
+"@id": "edge1085153", 
+"@length": 0.007228266507906175, 
+"@source": "node1085152", 
+"@target": "node1085153"
+}, 
+{
+"@id": "edge1085154", 
+"@length": 0.003232978795805114, 
+"@source": "node1085152", 
+"@target": "node1085154"
+}, 
+{
+"@id": "edge1085155", 
+"@length": 0.008847842718207608, 
+"@source": "node1085151", 
+"@target": "node1085155"
+}, 
+{
+"@id": "edge1085156", 
+"@length": 0.008131212189751939, 
+"@source": "node1085150", 
+"@target": "node1085156"
+}, 
+{
+"@id": "edge1085157", 
+"@length": 0.01553056525232462, 
+"@source": "node1085156", 
+"@target": "node1085157"
+}, 
+{
+"@id": "edge1085158", 
+"@length": 0.04031283763352983, 
+"@source": "node1085157", 
+"@target": "node1085158"
+}, 
+{
+"@id": "edge1085159", 
+"@length": 0.08677708040507044, 
+"@source": "node1085158", 
+"@target": "node1085159"
+}, 
+{
+"@id": "edge1085160", 
+"@length": 0.04910209820818771, 
+"@source": "node1085158", 
+"@target": "node1085160"
+}, 
+{
+"@id": "edge1085161", 
+"@length": 0.001984253614412614, 
+"@source": "node1085160", 
+"@target": "node1085161"
+}, 
+{
+"@id": "edge1085162", 
+"@length": 0.001125387167779271, 
+"@source": "node1085160", 
+"@target": "node1085162"
+}, 
+{
+"@id": "edge1085163", 
+"@length": 0.01561149318063872, 
+"@source": "node1085157", 
+"@target": "node1085163"
+}, 
+{
+"@id": "edge1085164", 
+"@length": 0.005774382400661991, 
+"@source": "node1085156", 
+"@target": "node1085164"
+}, 
+{
+"@id": "edge1085165", 
+"@length": 0.02945506836758752, 
+"@source": "node1085136", 
+"@target": "node1085165"
+}, 
+{
+"@id": "edge1085166", 
+"@length": 0.03408461992719594, 
+"@source": "node1085135", 
+"@target": "node1085166"
+}, 
+{
+"@id": "edge1085167", 
+"@length": 0.1129732073532654, 
+"@source": "node1085134", 
+"@target": "node1085167"
+}, 
+{
+"@id": "edge1085168", 
+"@length": 0.07290051802620959, 
+"@source": "node1085120", 
+"@target": "node1085168"
+}, 
+{
+"@id": "edge1085169", 
+"@length": 0.03979874066687066, 
+"@source": "node1085168", 
+"@target": "node1085169"
+}, 
+{
+"@id": "edge1085170", 
+"@length": 0.01411104319720195, 
+"@source": "node1085168", 
+"@target": "node1085170"
+}, 
+{
+"@id": "edge1085171", 
+"@length": 0.005964697750505388, 
+"@source": "node1085119", 
+"@target": "node1085171"
+}, 
+{
+"@id": "edge1085172", 
+"@length": 0.01209041120520837, 
+"@source": "node1085171", 
+"@target": "node1085172"
+}, 
+{
+"@id": "edge1085173", 
+"@length": 0.008323346142053245, 
+"@source": "node1085172", 
+"@target": "node1085173"
+}, 
+{
+"@id": "edge1085174", 
+"@length": 0.01173401988131029, 
+"@source": "node1085173", 
+"@target": "node1085174"
+}, 
+{
+"@id": "edge1085175", 
+"@length": 0.0349576774879861, 
+"@source": "node1085174", 
+"@target": "node1085175"
+}, 
+{
+"@id": "edge1085176", 
+"@length": 0.0568152882004568, 
+"@source": "node1085174", 
+"@target": "node1085176"
+}, 
+{
+"@id": "edge1085177", 
+"@length": 0.03142492299610618, 
+"@source": "node1085173", 
+"@target": "node1085177"
+}, 
+{
+"@id": "edge1085178", 
+"@length": 0.01652972290477021, 
+"@source": "node1085172", 
+"@target": "node1085178"
+}, 
+{
+"@id": "edge1085179", 
+"@length": 0.01403040560635566, 
+"@source": "node1085171", 
+"@target": "node1085179"
+}, 
+{
+"@id": "edge1085180", 
+"@length": 0.01191179381169209, 
+"@source": "node1085179", 
+"@target": "node1085180"
+}, 
+{
+"@id": "edge1085181", 
+"@length": 0.008837232166847547, 
+"@source": "node1085180", 
+"@target": "node1085181"
+}, 
+{
+"@id": "edge1085182", 
+"@length": 0.007089864991863757, 
+"@source": "node1085181", 
+"@target": "node1085182"
+}, 
+{
+"@id": "edge1085183", 
+"@length": 0.01829944019354434, 
+"@source": "node1085181", 
+"@target": "node1085183"
+}, 
+{
+"@id": "edge1085184", 
+"@length": 0.01737257271456767, 
+"@source": "node1085180", 
+"@target": "node1085184"
+}, 
+{
+"@id": "edge1085185", 
+"@length": 0.01990848726814326, 
+"@source": "node1085184", 
+"@target": "node1085185"
+}, 
+{
+"@id": "edge1085186", 
+"@length": 0.01688907108443389, 
+"@source": "node1085184", 
+"@target": "node1085186"
+}, 
+{
+"@id": "edge1085187", 
+"@length": 0.03816180130805124, 
+"@source": "node1085179", 
+"@target": "node1085187"
+}, 
+{
+"@id": "edge1085188", 
+"@length": 0.01508580116392663, 
+"@source": "node1085118", 
+"@target": "node1085188"
+}, 
+{
+"@id": "edge1085189", 
+"@length": 0.02083178293383969, 
+"@source": "node1085188", 
+"@target": "node1085189"
+}, 
+{
+"@id": "edge1085190", 
+"@length": 0.1866767903706997, 
+"@source": "node1085189", 
+"@target": "node1085190"
+}, 
+{
+"@id": "edge1085191", 
+"@length": 0.01172909917271027, 
+"@source": "node1085190", 
+"@target": "node1085191"
+}, 
+{
+"@id": "edge1085192", 
+"@length": 0.005910974282790398, 
+"@source": "node1085191", 
+"@target": "node1085192"
+}, 
+{
+"@id": "edge1085193", 
+"@length": 0.02420776147724151, 
+"@source": "node1085191", 
+"@target": "node1085193"
+}, 
+{
+"@id": "edge1085194", 
+"@length": 0.0183855859156567, 
+"@source": "node1085190", 
+"@target": "node1085194"
+}, 
+{
+"@id": "edge1085195", 
+"@length": 0.008537152679134179, 
+"@source": "node1085194", 
+"@target": "node1085195"
+}, 
+{
+"@id": "edge1085196", 
+"@length": 0.01846154092777197, 
+"@source": "node1085195", 
+"@target": "node1085196"
+}, 
+{
+"@id": "edge1085197", 
+"@length": 0.004761652095606304, 
+"@source": "node1085196", 
+"@target": "node1085197"
+}, 
+{
+"@id": "edge1085198", 
+"@length": 0.001038013599450664, 
+"@source": "node1085197", 
+"@target": "node1085198"
+}, 
+{
+"@id": "edge1085199", 
+"@length": 0.005248615273525732, 
+"@source": "node1085197", 
+"@target": "node1085199"
+}, 
+{
+"@id": "edge1085200", 
+"@length": 0.0117565215485117, 
+"@source": "node1085196", 
+"@target": "node1085200"
+}, 
+{
+"@id": "edge1085201", 
+"@length": 0.02549134541628924, 
+"@source": "node1085200", 
+"@target": "node1085201"
+}, 
+{
+"@id": "edge1085202", 
+"@length": 0.0009727788489168126, 
+"@source": "node1085201", 
+"@target": "node1085202"
+}, 
+{
+"@id": "edge1085203", 
+"@length": 0.0009718060032910534, 
+"@source": "node1085201", 
+"@target": "node1085203"
+}, 
+{
+"@id": "edge1085204", 
+"@length": 0.01275368396810992, 
+"@source": "node1085200", 
+"@target": "node1085204"
+}, 
+{
+"@id": "edge1085205", 
+"@length": 0.06508456383025747, 
+"@source": "node1085195", 
+"@target": "node1085205"
+}, 
+{
+"@id": "edge1085206", 
+"@length": 0.02631727218196282, 
+"@source": "node1085194", 
+"@target": "node1085206"
+}, 
+{
+"@id": "edge1085207", 
+"@length": 0.03989000642249861, 
+"@source": "node1085189", 
+"@target": "node1085207"
+}, 
+{
+"@id": "edge1085208", 
+"@length": 0.04002782831972942, 
+"@source": "node1085188", 
+"@target": "node1085208"
+}, 
+{
+"@id": "edge1085209", 
+"@length": 0.06317748490089911, 
+"@source": "node1085117", 
+"@target": "node1085209"
+}, 
+{
+"@id": "edge1085210", 
+"@length": 0.01222822731917208, 
+"@source": "node1085209", 
+"@target": "node1085210"
+}, 
+{
+"@id": "edge1085211", 
+"@length": 0.01830398856094344, 
+"@source": "node1085210", 
+"@target": "node1085211"
+}, 
+{
+"@id": "edge1085212", 
+"@length": 0.01882140831647982, 
+"@source": "node1085211", 
+"@target": "node1085212"
+}, 
+{
+"@id": "edge1085213", 
+"@length": 0.09739970045950433, 
+"@source": "node1085211", 
+"@target": "node1085213"
+}, 
+{
+"@id": "edge1085214", 
+"@length": 0.03891575840531292, 
+"@source": "node1085210", 
+"@target": "node1085214"
+}, 
+{
+"@id": "edge1085215", 
+"@length": 0.005627965658501851, 
+"@source": "node1085214", 
+"@target": "node1085215"
+}, 
+{
+"@id": "edge1085216", 
+"@length": 0.01802875014999296, 
+"@source": "node1085214", 
+"@target": "node1085216"
+}, 
+{
+"@id": "edge1085217", 
+"@length": 0.02397240437074944, 
+"@source": "node1085209", 
+"@target": "node1085217"
+}, 
+{
+"@id": "edge1085218", 
+"@length": 0.04253000769054553, 
+"@source": "node1085217", 
+"@target": "node1085218"
+}, 
+{
+"@id": "edge1085219", 
+"@length": 0.02903237383612264, 
+"@source": "node1085217", 
+"@target": "node1085219"
+}, 
+{
+"@id": "edge1085220", 
+"@length": 0.01849538061275938, 
+"@source": "node1085219", 
+"@target": "node1085220"
+}, 
+{
+"@id": "edge1085221", 
+"@length": 0.01046273259467152, 
+"@source": "node1085219", 
+"@target": "node1085221"
+}
+], 
+"meta": [
+{
+"$": "node1085118", 
+"@property": "ot:inGroupClade", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "BI", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "ITS", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "LSU", 
+"@property": "ot:tag", 
+"@xsi:type": "nex:LiteralMeta"
+}, 
+{
+"$": "BI, LSU + ITS", 
+"@property": "ot:curatedType", 
+"@xsi:type": "nex:LiteralMeta"
+}
+], 
+"node": [
+{
+"@id": "node1085107", 
+"@root": "true"
+}, 
+{
+"@about": "#node1085108", 
+"@id": "node1085108", 
+"@otu": "otu405107", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085109"
+}, 
+{
+"@id": "node1085110"
+}, 
+{
+"@about": "#node1085111", 
+"@id": "node1085111", 
+"@otu": "otu405083", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085112", 
+"@id": "node1085112", 
+"@otu": "otu405087", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085113", 
+"@id": "node1085113", 
+"@otu": "otu405135", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085114"
+}, 
+{
+"@about": "#node1085115", 
+"@id": "node1085115", 
+"@otu": "otu405138", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085116", 
+"@id": "node1085116", 
+"@otu": "otu405126", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085117"
+}, 
+{
+"@id": "node1085118"
+}, 
+{
+"@id": "node1085119"
+}, 
+{
+"@id": "node1085120"
+}, 
+{
+"@id": "node1085121"
+}, 
+{
+"@id": "node1085122"
+}, 
+{
+"@id": "node1085123"
+}, 
+{
+"@about": "#node1085124", 
+"@id": "node1085124", 
+"@otu": "otu405133", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085125"
+}, 
+{
+"@about": "#node1085126", 
+"@id": "node1085126", 
+"@otu": "otu405114", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085127", 
+"@id": "node1085127", 
+"@otu": "otu405116", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085128", 
+"@id": "node1085128", 
+"@otu": "otu405121", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085129", 
+"@id": "node1085129", 
+"@otu": "otu405112", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085130", 
+"@id": "node1085130", 
+"@otu": "otu405123", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085131"
+}, 
+{
+"@about": "#node1085132", 
+"@id": "node1085132", 
+"@otu": "otu405120", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085133", 
+"@id": "node1085133", 
+"@otu": "otu405098", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085134"
+}, 
+{
+"@id": "node1085135"
+}, 
+{
+"@id": "node1085136"
+}, 
+{
+"@id": "node1085137"
+}, 
+{
+"@id": "node1085138"
+}, 
+{
+"@id": "node1085139"
+}, 
+{
+"@id": "node1085140"
+}, 
+{
+"@about": "#node1085141", 
+"@id": "node1085141", 
+"@otu": "otu405119", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085142", 
+"@id": "node1085142", 
+"@otu": "otu405143", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085143", 
+"@id": "node1085143", 
+"@otu": "otu405106", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085144", 
+"@id": "node1085144", 
+"@otu": "otu405088", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085145"
+}, 
+{
+"@about": "#node1085146", 
+"@id": "node1085146", 
+"@otu": "otu405110", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085147"
+}, 
+{
+"@about": "#node1085148", 
+"@id": "node1085148", 
+"@otu": "otu405128", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085149", 
+"@id": "node1085149", 
+"@otu": "otu405086", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085150"
+}, 
+{
+"@id": "node1085151"
+}, 
+{
+"@id": "node1085152"
+}, 
+{
+"@about": "#node1085153", 
+"@id": "node1085153", 
+"@otu": "otu405140", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085154", 
+"@id": "node1085154", 
+"@otu": "otu405102", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085155", 
+"@id": "node1085155", 
+"@otu": "otu405103", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085156"
+}, 
+{
+"@id": "node1085157"
+}, 
+{
+"@id": "node1085158"
+}, 
+{
+"@about": "#node1085159", 
+"@id": "node1085159", 
+"@otu": "otu405108", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085160"
+}, 
+{
+"@about": "#node1085161", 
+"@id": "node1085161", 
+"@otu": "otu405124", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085162", 
+"@id": "node1085162", 
+"@otu": "otu405099", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085163", 
+"@id": "node1085163", 
+"@otu": "otu405085", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085164", 
+"@id": "node1085164", 
+"@otu": "otu405111", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085165", 
+"@id": "node1085165", 
+"@otu": "otu405096", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085166", 
+"@id": "node1085166", 
+"@otu": "otu405139", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085167", 
+"@id": "node1085167", 
+"@otu": "otu405094", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085168"
+}, 
+{
+"@about": "#node1085169", 
+"@id": "node1085169", 
+"@otu": "otu405093", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085170", 
+"@id": "node1085170", 
+"@otu": "otu405095", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085171"
+}, 
+{
+"@id": "node1085172"
+}, 
+{
+"@id": "node1085173"
+}, 
+{
+"@id": "node1085174"
+}, 
+{
+"@about": "#node1085175", 
+"@id": "node1085175", 
+"@otu": "otu405137", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085176", 
+"@id": "node1085176", 
+"@otu": "otu405109", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085177", 
+"@id": "node1085177", 
+"@otu": "otu405122", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085178", 
+"@id": "node1085178", 
+"@otu": "otu405132", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085179"
+}, 
+{
+"@id": "node1085180"
+}, 
+{
+"@id": "node1085181"
+}, 
+{
+"@about": "#node1085182", 
+"@id": "node1085182", 
+"@otu": "otu405125", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085183", 
+"@id": "node1085183", 
+"@otu": "otu405129", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085184"
+}, 
+{
+"@about": "#node1085185", 
+"@id": "node1085185", 
+"@otu": "otu405090", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085186", 
+"@id": "node1085186", 
+"@otu": "otu405101", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085187", 
+"@id": "node1085187", 
+"@otu": "otu405105", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085188"
+}, 
+{
+"@id": "node1085189"
+}, 
+{
+"@id": "node1085190"
+}, 
+{
+"@id": "node1085191"
+}, 
+{
+"@about": "#node1085192", 
+"@id": "node1085192", 
+"@otu": "otu405084", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085193", 
+"@id": "node1085193", 
+"@otu": "otu405097", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085194"
+}, 
+{
+"@id": "node1085195"
+}, 
+{
+"@id": "node1085196"
+}, 
+{
+"@id": "node1085197"
+}, 
+{
+"@about": "#node1085198", 
+"@id": "node1085198", 
+"@otu": "otu405113", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085199", 
+"@id": "node1085199", 
+"@otu": "otu405104", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085200"
+}, 
+{
+"@id": "node1085201"
+}, 
+{
+"@about": "#node1085202", 
+"@id": "node1085202", 
+"@otu": "otu405092", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085203", 
+"@id": "node1085203", 
+"@otu": "otu405131", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085204", 
+"@id": "node1085204", 
+"@otu": "otu405142", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085205", 
+"@id": "node1085205", 
+"@otu": "otu405100", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085206", 
+"@id": "node1085206", 
+"@otu": "otu405134", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085207", 
+"@id": "node1085207", 
+"@otu": "otu405091", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085208", 
+"@id": "node1085208", 
+"@otu": "otu405136", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085209"
+}, 
+{
+"@id": "node1085210"
+}, 
+{
+"@id": "node1085211"
+}, 
+{
+"@about": "#node1085212", 
+"@id": "node1085212", 
+"@otu": "otu405115", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085213", 
+"@id": "node1085213", 
+"@otu": "otu405118", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085214"
+}, 
+{
+"@about": "#node1085215", 
+"@id": "node1085215", 
+"@otu": "otu405089", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085216", 
+"@id": "node1085216", 
+"@otu": "otu405141", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085217"
+}, 
+{
+"@about": "#node1085218", 
+"@id": "node1085218", 
+"@otu": "otu405127", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@id": "node1085219"
+}, 
+{
+"@about": "#node1085220", 
+"@id": "node1085220", 
+"@otu": "otu405117", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}, 
+{
+"@about": "#node1085221", 
+"@id": "node1085221", 
+"@otu": "otu405130", 
+"meta": [
+{
+"$": "true", 
+"@datatype": "xsd:boolean", 
+"@property": "ot:isLeaf", 
+"@xsi:type": "nex:LiteralMeta"
+}
+]
+}
+]
+}
+]
+}
+}
+}
