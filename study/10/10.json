@@ -54,18 +54,40 @@
 "searchContext": {
 "$": "All life"
 }, 
-"substitutions": [
+"substitutions": {
+"substitution": [
 {
-"@active": "false", 
+"@active": "true", 
+"new": {
+"$": "FOOZ"
+}, 
+"old": {
+"$": "Lept", 
+},
+"@valid": "true"
+},
+{
+"@active": "true", 
 "new": {
 "$": ""
 }, 
 "old": {
-"$": "", 
+"$": "(\\w*)$", 
+},
+"@valid": "true"
+},
+{
+"@active": "false", 
+"new": {
+"$": "BAZ"
+}, 
+"old": {
+"$": "FOO", 
 },
 "@valid": "true"
 }
 ]
+}
 }
 }, 
 "name": "OpenTree curation webapp", 
