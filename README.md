@@ -1,6 +1,6 @@
-# treenexus
+# phylesystem
 
-[![Build Status](https://secure.travis-ci.org/OpenTreeOfLife/treenexus.png)](http://travis-ci.org/OpenTreeOfLife/treenexus.png)
+[![Build Status](https://secure.travis-ci.org/OpenTreeOfLife/phylesystem.png)](http://travis-ci.org/OpenTreeOfLife/phylesystem.png)
 
 The phylogenetic studies in this repository are synthesized into the
 [Open Tree of Life](http://opentreeoflife.org) .

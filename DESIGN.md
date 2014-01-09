@@ -1,15 +1,15 @@
-# The TreeNexus Design Document
+# The Phylesystem Design Document
 
-This file documents the design of TreeNexus, including requirements defined by
+This file documents the design of Phylesystem, including requirements defined by
 the [Open Tree of Life](http://opentreeoflife.org) community and software team
 and the reasons for various "details of implementation".
 
 ## Big Picture
 
 The raw data of the Open Tree of Life needs to be stored somewhere. Prior to
-TreeNexus, this data was stored in flat files and relational databases.
+Phylesystem, this data was stored in flat files and relational databases.
 
-TreeNexus stores each phylogenetic study in a single JSON file in NexSON
+Phylesystem stores each phylogenetic study in a single JSON file in NexSON
 format.  In the future, each study will become a directory so that we do not
 run into large-file issues with Git. Currently (September 2013)
 
@@ -22,7 +22,6 @@ run into large-file issues with Git. Currently (September 2013)
 
 ## OToL API
 
-
 This repo will be used by the Open Tree of Life API, which will be the main
 entry point for people to access the OToL in a programmatic way. It is expected
 that some people may want to interact directly with this repo for large data
@@ -30,7 +29,7 @@ changes, but most will be curating data via a website which uses the OToL API.
 
 The API will abstract away all the Git-specific details of this repo, so users
 of the API can be blissfully ignorant of all the implementation details of
-TreeNexus.  Additionally, users of the OToL API will be able to download select
+Phylesystem.  Additionally, users of the OToL API will be able to download select
 parts of the OToL without downloading the entire corpus or even an entire
 study.
 
@@ -50,8 +49,4 @@ Each NexSON file must:
 
 ### Basic API methods
 
-Please see the [OTOL API Design Doc](https://github.com/OpenTreeOfLife/api.opentreeoflife.org/blob/master/DESIGN.md)
-
-## Authors
-
-Jonathan "Duke" Leto
+Please see the [OTOL API Doc](https://github.com/OpenTreeOfLife/api.opentreeoflife.org/tree/master/docs)
