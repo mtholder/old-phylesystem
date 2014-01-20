@@ -12,7 +12,9 @@ badgerfish conventions applied to NeXML.
 
 ## Getting involved
 
-There is a #otol channel on the Freenode IRC network (chat.freenode.net).
+[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.freenode.net/opentreeoflife.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=guest|?#opentreeoflife)
+
+We maintain the #opentreeoflife chat (IRC) channel on [Freenode](http://freenode.net/). Clicking the button above will join the channel as user __guest__, using the web-based [KiwiIRC](https://kiwiirc.com/) client.
 
 ## Fetching changes from phylografter.
 
