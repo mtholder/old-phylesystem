@@ -181,9 +181,9 @@ def download_nexson_from_phylografter(paths, download_db, lock_policy):
         if not owns_lock:
             return False
         study = paths['study']
-        if VERBOSE:
-            sys.stderr.write('Downloading %s...\n' % study)
         SUBMIT_URI = DOMAIN + '/study/export_gzipNexSON.json/' + study
+        if VERBOSE:
+            sys.stderr.write('Downloading %s using "%s"\n' % (study, SUBMIT_URI))
         resp = requests.get(SUBMIT_URI,
                          headers=headers,
                          allow_redirects=True)
