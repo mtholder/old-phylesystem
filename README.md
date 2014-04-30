@@ -1,20 +1,8 @@
-# phylesystem
+# old-phylesystem or "the repo formerly known as phylesystem"
 
-[![Build Status](https://secure.travis-ci.org/OpenTreeOfLife/phylesystem.png)](http://travis-ci.org/OpenTreeOfLife/phylesystem.png)
-
-The phylogenetic studies in this repository are synthesized into the
-[Open Tree of Life](http://opentreeoflife.org) .
-
-## The Open Tree Of Life NexSON Datastore
-
-These studies are stored as JSON files, in the NexSON format. NexSON is simply
-badgerfish conventions applied to NeXML.
-
-## Getting involved
-
-[![Visit our IRC channel](https://kiwiirc.com/buttons/irc.freenode.net/opentreeoflife.png)](https://kiwiirc.com/client/irc.freenode.net/?nick=guest|?#opentreeoflife)
-
-We maintain the #opentreeoflife chat (IRC) channel on [Freenode](http://freenode.net/). Clicking the button above will join the channel as user __guest__, using the web-based [KiwiIRC](https://kiwiirc.com/) client. Yes, there are even [logs](http://irclog.perlgeek.de/opentreeoflife/today).
+Before we started tracking changes permanently in the new
+curation tool for the Open Tree of Life project, this was
+the phylesystem repo.
 
 ## Fetching changes from phylografter.
 
